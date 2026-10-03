@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     title: `Is car loan interest tax-deductible? Complete guide | ${brand}`,
     description: "The 4 rules, the $10,000 cap, phase-outs, and how to verify your vehicle — in plain English.",
     url: `${siteUrl}/is-car-loan-interest-tax-deductible`,
+    images: [{ url: `${siteUrl}/og-image.png`, width: 1200, height: 630 }],
     type: "article",
   },
 };

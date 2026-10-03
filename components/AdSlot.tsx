@@ -1,7 +1,8 @@
 /**
- * PLACEHOLDER ad slot.
- * To go live: replace the inner div with your AdSense <ins> code + push script.
- * See README.md ("Monetization") for exactly where the AdSense script tag goes.
+ * Ad slot. Renders NOTHING until AdSense is configured via
+ * NEXT_PUBLIC_ADSENSE_CLIENT — placeholder boxes must never be
+ * visible to the public. When the client ID is set, replace the
+ * inner markup below with the real AdSense <ins> code.
  */
 export default function AdSlot({
   slot,
@@ -10,17 +11,15 @@ export default function AdSlot({
   slot: string;
   label?: string;
 }) {
+  if (!process.env.NEXT_PUBLIC_ADSENSE_CLIENT) return null;
+
   return (
     <div className="my-8" aria-hidden="true">
-      <div className="rounded-lg border-2 border-dashed border-neutral-300 bg-neutral-50 p-6 text-center">
+      <div className="rounded-lg border border-neutral-200 bg-neutral-50 p-6 text-center">
         <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400">
           Advertisement
         </p>
-        <p className="mt-2 text-sm text-neutral-500">
-          {label} — ad slot <code className="font-mono">"{slot}"</code>.
-          Paste your AdSense code in{" "}
-          <code className="font-mono">components/AdSlot.tsx</code>.
-        </p>
+        {/* TODO: paste the AdSense <ins> unit for slot "{slot}" ({label}) here. */}
       </div>
     </div>
   );

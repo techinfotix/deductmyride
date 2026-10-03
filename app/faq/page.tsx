@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     title: `FAQ | ${brand}`,
     description: "Every common question about the car loan interest deduction, answered in plain English.",
     url: `${siteUrl}/faq`,
+    images: [{ url: `${siteUrl}/og-image.png`, width: 1200, height: 630 }],
   },
 };
 

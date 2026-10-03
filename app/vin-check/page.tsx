@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     title: `Free VIN eligibility check | ${brand}`,
     description: "Decode your VIN with the official NHTSA database and get a 4-rule verdict in 60 seconds.",
     url: `${siteUrl}/vin-check`,
+    images: [{ url: `${siteUrl}/og-image.png`, width: 1200, height: 630 }],
   },
 };
 

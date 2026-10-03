@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -14,16 +15,32 @@ export const metadata: Metadata = {
     template: `%s | ${brand}`,
   },
   description: tagline,
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     type: "website",
     siteName: brand,
     title: `${brand} — Car Loan Interest Tax Deduction Checker`,
     description: tagline,
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Does your car qualify for the $10,000 car loan interest deduction?",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${brand} — Car Loan Interest Tax Deduction Checker`,
     description: tagline,
+    images: ["/og-image.png"],
   },
 };
 
@@ -38,6 +55,7 @@ export default function RootLayout({
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
+        <Analytics />
       </body>
     </html>
   );

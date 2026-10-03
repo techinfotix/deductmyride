@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     title: `Deduction calculator | ${brand}`,
     description: "Estimate your deduction and real tax savings — and learn why a deduction is not a refund.",
     url: `${siteUrl}/calculator`,
+    images: [{ url: `${siteUrl}/og-image.png`, width: 1200, height: 630 }],
   },
 };
 

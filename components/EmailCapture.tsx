@@ -3,8 +3,12 @@
 import { useState } from "react";
 
 /**
- * Email capture. POSTs to /api/subscribe (placeholder — returns 501 until
- * you connect a real provider; see README.md "Email capture").
+ * Email capture. POSTs to /api/subscribe.
+ *
+ * The form stays hidden until an email provider is wired up
+ * (set NEXT_PUBLIC_EMAIL_ENABLED=true AND connect a real provider
+ * in app/api/subscribe/route.ts). A form that errors on submit
+ * must never be visible to the public.
  */
 export default function EmailCapture({
   heading = "Get tax-season reminders",
@@ -13,6 +17,8 @@ export default function EmailCapture({
   heading?: string;
   subheading?: string;
 }) {
+  if (process.env.NEXT_PUBLIC_EMAIL_ENABLED !== "true") return null;
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");

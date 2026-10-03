@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: "Does your car qualify for the $10,000 car loan interest deduction?",
     description: tagline,
     url: siteUrl,
+    images: [{ url: `${siteUrl}/og-image.png`, width: 1200, height: 630 }],
   },
 };
 
