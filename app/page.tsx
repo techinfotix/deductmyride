@@ -9,6 +9,24 @@ import Disclaimer from "@/components/Disclaimer";
 import JsonLd from "@/components/JsonLd";
 import { brand, siteUrl, tagline } from "@/lib/site";
 import { estimateDeduction, formatUSD } from "@/lib/tax";
+import { vehicles, modelPagePath } from "@/lib/vehicles";
+
+// Highest US search-volume models — linked from the homepage so Google
+// (and visitors) can reach the model-page cluster from the site's strongest page.
+const POPULAR_MODELS: Array<[string, string]> = [
+  ["Ford", "F-150"],
+  ["Toyota", "RAV4"],
+  ["Honda", "CR-V"],
+  ["Tesla", "Model Y"],
+  ["Toyota", "Camry"],
+  ["Honda", "Civic"],
+  ["Chevrolet", "Silverado"],
+  ["Toyota", "Corolla"],
+  ["Honda", "Accord"],
+  ["Nissan", "Rogue"],
+  ["Ford", "Explorer"],
+  ["Jeep", "Wrangler"],
+];
 
 export const metadata: Metadata = {
   title: "Car Loan Interest Tax Deduction Checker — Does Your Car Qualify?",
@@ -150,6 +168,36 @@ export default function Home() {
         </section>
 
         <AdSlot slot="homepage-mid" label="In-article responsive ad" />
+
+        {/* Popular models — internal links into the model-page cluster */}
+        <section className="mt-12" aria-labelledby="models-heading">
+          <h2 id="models-heading" className="text-2xl font-bold text-neutral-900">
+            Check popular models
+          </h2>
+          <p className="mt-2 text-sm text-neutral-600">
+            See whether America&apos;s best-selling cars, trucks, and SUVs meet
+            the deduction rules.
+          </p>
+          <ul className="mt-6 grid grid-cols-2 gap-2 text-sm sm:grid-cols-3 lg:grid-cols-4">
+            {POPULAR_MODELS.map(([make, model]) => {
+              const v = vehicles.find((x) => x.make === make && x.model === model);
+              if (!v) return null;
+              return (
+                <li key={`${make}-${model}`}>
+                  <Link
+                    href={modelPagePath(v, 2026)}
+                    className="block rounded-md border border-neutral-200 px-3 py-2 text-neutral-700 hover:border-emerald-300 hover:text-emerald-800"
+                  >
+                    2026 {make} {model}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+          <Link href="/models" className="mt-4 inline-block text-sm font-semibold text-emerald-700 hover:text-emerald-800">
+            Browse all 60+ models →
+          </Link>
+        </section>
 
         {/* FAQ teaser */}
         <section className="mt-12" aria-labelledby="faq-heading">

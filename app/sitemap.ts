@@ -9,13 +9,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/calculator",
     "/is-car-loan-interest-tax-deductible",
     "/faq",
+    "/models",
+    "/privacy-policy",
+    "/contact",
+    "/blog/obbba-new-tax-deductions-2026",
+    "/blog/car-loan-interest-deduction-vs-ev-tax-credit",
+    "/blog/can-you-write-off-car-loan-interest",
   ];
 
   const entries: MetadataRoute.Sitemap = staticPages.map((p) => ({
     url: `${siteUrl}${p}`,
     lastModified: new Date(),
     changeFrequency: p === "" ? "weekly" : "monthly",
-    priority: p === "" ? 1 : 0.8,
+    priority:
+      p === ""
+        ? 1
+        : p === "/privacy-policy" || p === "/contact"
+          ? 0.5
+          : p.startsWith("/blog/")
+            ? 0.9
+            : 0.8,
   }));
 
   for (const v of vehicles) {

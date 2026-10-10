@@ -4,6 +4,7 @@ import { brand } from "@/lib/site";
 const links = [
   { href: "/vin-check", label: "VIN Check" },
   { href: "/calculator", label: "Calculator" },
+  { href: "/models", label: "Models" },
   { href: "/is-car-loan-interest-tax-deductible", label: "Guide" },
   { href: "/faq", label: "FAQ" },
 ];
