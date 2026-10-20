@@ -122,8 +122,12 @@ export default function DeductionCalculator() {
           </div>
           <div className="card border-emerald-200 p-5">
             <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500">Estimated deduction</p>
-            <p className="mt-2 text-3xl font-bold text-emerald-700">{formatUSD(result.cappedDeduction)}</p>
-            <p className="mt-1 text-xs text-neutral-500">Capped at $10,000/year by law.</p>
+            <p className="mt-2 text-3xl font-bold text-emerald-700">{formatUSD(result.effectiveDeduction)}</p>
+            <p className="mt-1 text-xs text-neutral-500">
+              {result.phaseOutApplies
+                ? `After $${result.phaseOutReduction.toLocaleString("en-US")} MAGI phase-out reduction (final IRS rules).`
+                : "Capped at $10,000/year by law."}
+            </p>
           </div>
           <div className="card p-5">
             <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500">Actual tax you&apos;d save</p>
@@ -135,11 +139,14 @@ export default function DeductionCalculator() {
 
       {result?.phaseOutApplies && (
         <div className="mt-4 rounded-lg border border-amber-300 bg-amber-50 p-4">
-          <p className="text-sm font-semibold text-amber-900">⚠️ MAGI phase-out may apply</p>
+          <p className="text-sm font-semibold text-amber-900">⚠️ MAGI phase-out applied</p>
           <p className="mt-1 text-sm text-amber-800">
-            Your MAGI ({formatUSD(num(magi, 0))}) is above the {formatUSD(result.threshold)} phase-out
-            threshold for {FILING_STATUS_LABELS[status].toLowerCase()}. Your actual deduction may be
-            reduced — the figures above are before phase-out. Confirm with a CPA.
+            Your MAGI ({formatUSD(num(magi, 0))}) is{" "}
+            {formatUSD(num(magi, 0) - result.threshold)} above the {formatUSD(result.threshold)} threshold for{" "}
+            {FILING_STATUS_LABELS[status].toLowerCase()}. Under final IRS regulations (T.D. 10054), the $10,000 cap
+            is reduced by $200 for each $1,000 (or part thereof) over the threshold — a{" "}
+            {formatUSD(result.phaseOutReduction)} reduction, leaving {formatUSD(result.effectiveDeduction)} deductible.
+            This is an estimate, not tax advice — a CPA can confirm edge cases (refinances, mixed-use vehicles).
           </p>
         </div>
       )}
@@ -147,8 +154,8 @@ export default function DeductionCalculator() {
       <div className="card mt-6 border-emerald-200 bg-emerald-50 p-5">
         <p className="font-semibold text-emerald-900">Key insight: a deduction is not a refund</p>
         <p className="mt-1 text-sm text-emerald-800">
-          A {formatUSD(result?.cappedDeduction ?? 0)} deduction at a {rate}% marginal rate saves you{" "}
-          {formatUSD(result?.taxSaved ?? 0)} in tax — not {formatUSD(result?.cappedDeduction ?? 0)}.
+          A {formatUSD(result?.effectiveDeduction ?? 0)} deduction at a {rate}% marginal rate saves you{" "}
+          {formatUSD(result?.taxSaved ?? 0)} in tax — not {formatUSD(result?.effectiveDeduction ?? 0)}.
           The deduction lowers your taxable income; your bracket decides the savings.
         </p>
       </div>

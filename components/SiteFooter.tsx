@@ -29,6 +29,9 @@ export default function SiteFooter() {
               <li><Link className="text-neutral-600 hover:text-neutral-900" href="/blog/obbba-new-tax-deductions-2026">4 new 2026 tax deductions</Link></li>
               <li><Link className="text-neutral-600 hover:text-neutral-900" href="/blog/car-loan-interest-deduction-vs-ev-tax-credit">Deduction vs EV credit</Link></li>
               <li><Link className="text-neutral-600 hover:text-neutral-900" href="/blog/can-you-write-off-car-loan-interest">Can you write off car interest?</Link></li>
+              <li><Link className="text-neutral-600 hover:text-neutral-900" href="/blog/how-to-claim-car-loan-interest-deduction">How to claim (Schedule 1-A)</Link></li>
+              <li><Link className="text-neutral-600 hover:text-neutral-900" href="/blog/car-loan-interest-deduction-self-employed">Self-employed deduction</Link></li>
+              <li><Link className="text-neutral-600 hover:text-neutral-900" href="/blog/which-cars-qualify-for-car-loan-interest-deduction">Which cars qualify? (list)</Link></li>
             </ul>
           </nav>
           <div>

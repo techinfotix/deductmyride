@@ -15,6 +15,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/obbba-new-tax-deductions-2026",
     "/blog/car-loan-interest-deduction-vs-ev-tax-credit",
     "/blog/can-you-write-off-car-loan-interest",
+    "/blog/irs-final-rules-car-loan-interest-deduction",
+    "/blog/how-to-claim-car-loan-interest-deduction",
+    "/blog/car-loan-interest-deduction-self-employed",
+    "/blog/which-cars-qualify-for-car-loan-interest-deduction",
   ];
 
   const entries: MetadataRoute.Sitemap = staticPages.map((p) => ({

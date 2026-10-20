@@ -15,6 +15,9 @@
 - It is an above-the-line deduction: no itemizing required.
 - MAGI phase-out begins at $100,000 (single) / $200,000 (married filing jointly).
 - A deduction is not a refund: tax saved = deduction × marginal tax rate.
+- Claimed on Schedule 1-A, Part IV; the vehicle's VIN is mandatory on the return.
+- Lenders send Form 1098-VLI for the 2026 tax year when qualified interest paid is $600+.
+- Final regulations (T.D. 10054, Sept 2026): interest on trade-in negative equity rolled into a new loan is NOT deductible.
 
 ## Pages
 - [Home](https://deductmyride.com/): VIN checker hero, 4-rule explainer, savings example.
@@ -22,7 +25,17 @@
 - [Deduction calculator](https://deductmyride.com/calculator): loan amount/APR/term/filing status/MAGI/marginal rate → year-1 interest, capped deduction, tax saved; shareable URLs.
 - [Complete guide](https://deductmyride.com/is-car-loan-interest-tax-deductible): plain-English guide with sources.
 - [FAQ](https://deductmyride.com/faq): 12 common questions answered.
+- [Model directory](https://deductmyride.com/models): all 60+ models grouped by make with US-assembly verdicts.
 - Model pages (/does-[make]-[model]-[year]-qualify): per-model verdicts for 2025–2026 best-sellers (US assembly status, example savings, FAQs).
+
+## Guides (blog)
+- [The 4 new OBBBA tax deductions for 2026](https://deductmyride.com/blog/obbba-new-tax-deductions-2026): tips, overtime, car loan interest, senior bonus — caps, phaseouts, Schedule 1-A.
+- [How to claim the car loan interest deduction](https://deductmyride.com/blog/how-to-claim-car-loan-interest-deduction): step-by-step — Form 1098-VLI, VIN on Schedule 1-A Part IV, phase-out math, Form 1040.
+- [Car loan interest deduction for the self-employed](https://deductmyride.com/blog/car-loan-interest-deduction-self-employed): Schedule C business share (even with standard mileage) + Schedule 1-A personal share.
+- [Which cars qualify for the deduction](https://deductmyride.com/blog/which-cars-qualify-for-car-loan-interest-deduction): US-assembled list, VIN-dependent models, models that do not qualify.
+- [Can you write off car loan interest?](https://deductmyride.com/blog/can-you-write-off-car-loan-interest): yes — up to $10,000/year if the 4 rules pass.
+- [Deduction vs EV tax credit](https://deductmyride.com/blog/car-loan-interest-deduction-vs-ev-tax-credit): the federal EV credit is expired; comparison with the interest deduction.
+- [IRS final rules (T.D. 10054)](https://deductmyride.com/blog/irs-final-rules-car-loan-interest-deduction): finalized regulations — negative-equity interest not deductible, VIN mandatory.
 
 ## Data sources
 - Vehicle decoding: NHTSA vPIC API (https://vpic.nhtsa.dot.gov/), free, no key.

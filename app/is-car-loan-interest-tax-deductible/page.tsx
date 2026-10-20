@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: "What is the MAGI phase-out?",
-    a: "The deduction phases out for higher incomes: it begins to phase out at $100,000 of modified adjusted gross income for single filers ($200,000 for married filing jointly). If your MAGI is above the threshold, confirm the exact reduction with a CPA.",
+    a: "The deduction phases out for higher incomes. Final IRS regulations (T.D. 10054, Sept 2026) set the exact math: the $10,000 cap drops by $200 for every $1,000 (or part of $1,000) of modified adjusted gross income above $100,000 for single filers, married filing separately, and heads of household ($200,000 for married filing jointly). Example: a single filer at $124,200 MAGI loses $5,000 of the cap. The deduction disappears entirely at $150,000 ($250,000 joint).",
   },
   {
     q: "Does a $10,000 deduction mean I get $10,000 back?",
