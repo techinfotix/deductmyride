@@ -32,6 +32,9 @@ export default function SiteFooter() {
               <li><Link className="text-neutral-600 hover:text-neutral-900" href="/blog/how-to-claim-car-loan-interest-deduction">How to claim (Schedule 1-A)</Link></li>
               <li><Link className="text-neutral-600 hover:text-neutral-900" href="/blog/car-loan-interest-deduction-self-employed">Self-employed deduction</Link></li>
               <li><Link className="text-neutral-600 hover:text-neutral-900" href="/blog/which-cars-qualify-for-car-loan-interest-deduction">Which cars qualify? (list)</Link></li>
+              <li><Link className="text-neutral-600 hover:text-neutral-900" href="/blog/does-leasing-a-car-qualify-for-tax-deduction">Does leasing qualify?</Link></li>
+              <li><Link className="text-neutral-600 hover:text-neutral-900" href="/blog/car-loan-interest-deduction-income-limits">Income limits (MAGI)</Link></li>
+              <li><Link className="text-neutral-600 hover:text-neutral-900" href="/glossary">Tax glossary</Link></li>
             </ul>
           </nav>
           <div>

@@ -19,6 +19,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/how-to-claim-car-loan-interest-deduction",
     "/blog/car-loan-interest-deduction-self-employed",
     "/blog/which-cars-qualify-for-car-loan-interest-deduction",
+    "/blog/does-leasing-a-car-qualify-for-tax-deduction",
+    "/blog/car-loan-interest-deduction-income-limits",
+    "/glossary",
   ];
 
   const entries: MetadataRoute.Sitemap = staticPages.map((p) => ({

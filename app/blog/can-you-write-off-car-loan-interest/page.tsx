@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
+    q: "Can I deduct car interest on my taxes?",
+    a: "Yes, if the 4 rules pass. Enter the interest you paid on Schedule 1-A, Part IV, with your VIN — no itemizing needed. The deduction is capped at $10,000 per year, and phase-outs start at $100,000 MAGI ($200,000 joint).",
+  },
+  {
+    q: "Can you deduct interest paid on a car loan?",
+    a: "Yes — only interest actually paid during the tax year counts, up to $10,000. Interest billed but not yet paid does not count until you pay it. Your year-end lender statement shows the interest-paid total to use.",
+  },
+  {
     q: "Is car loan interest tax deductible in 2026?",
     a: "Yes — for the first time in decades. A 2025 law created a temporary deduction of up to $10,000/year of car loan interest for tax years 2025–2028, if your vehicle is new, finally assembled in the USA, for personal use, and financed with a qualifying loan.",
   },
@@ -52,6 +60,18 @@ export default function WriteOffPage() {
         interest was <em>not</em> deductible at all. Here&apos;s exactly when
         you qualify.
       </p>
+
+      {/* Answer-first block — written for AI answers & featured snippets */}
+      <div className="card mt-6 border-emerald-200 bg-emerald-50/50 p-5">
+        <p className="text-[15px] leading-relaxed text-neutral-800">
+          <strong>Quick answer:</strong> Yes — for tax years 2025–2028 you can
+          deduct up to <strong>$10,000 per year</strong> of car loan interest,
+          if your car is <strong>new, finally assembled in the USA</strong>,
+          under 14,000 lbs, bought for personal use with a loan after 12/31/2024,
+          and your MAGI is under $100,000 ($200,000 joint) — with a phase-out to
+          $150,000 / $250,000. No itemizing required; claim it on Schedule 1-A.
+        </p>
+      </div>
 
       <section className="mt-10">
         <h2 className="text-2xl font-bold text-neutral-900">
@@ -128,6 +148,22 @@ export default function WriteOffPage() {
         </p>
       </section>
 
+      <section className="mt-10">
+        <h2 className="text-2xl font-bold text-neutral-900">
+          Can you deduct interest paid on a car loan?
+        </h2>
+        <p className="mt-3 text-[15px] leading-relaxed text-neutral-700">
+          Yes — and &ldquo;interest paid&rdquo; is the exact test. The
+          deduction is the interest you <strong>actually paid</strong> during
+          the tax year, up to $10,000, not the interest your loan accrued or
+          was billed for. If you paid $7,000 of interest in the year, your
+          deduction is $7,000; if you paid $14,000, it is capped at $10,000.
+          Interest billed but not yet paid does not count until you pay it.
+          Your year-end lender statement shows the interest-paid total — use
+          that figure on Schedule 1-A, Part IV, with your VIN.
+        </p>
+      </section>
+
       <section className="mt-12" aria-labelledby="faq-heading">
         <h2 id="faq-heading" className="text-2xl font-bold text-neutral-900">
           Common questions
@@ -156,6 +192,20 @@ export default function WriteOffPage() {
             name: f.q,
             acceptedAnswer: { "@type": "Answer", text: f.a },
           })),
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "Can You Write Off Car Loan Interest on Your Taxes? (2026 Rules)",
+          description:
+            "Generally no — but a new 2025–2028 law lets you deduct up to $10,000/year of car loan interest if your car is new, US-assembled, and for personal use. See the 4 rules.",
+          url: `${siteUrl}/blog/can-you-write-off-car-loan-interest`,
+          author: { "@type": "Organization", name: brand, url: siteUrl },
+          publisher: { "@type": "Organization", name: brand, url: siteUrl },
+          datePublished: "2026-10-10",
+          dateModified: "2026-10-26",
         }}
       />
     </article>

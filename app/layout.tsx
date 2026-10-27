@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import JsonLd from "@/components/JsonLd";
 import { siteUrl, brand, tagline } from "@/lib/site";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
@@ -56,6 +57,27 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <SiteFooter />
         <Analytics />
+        {/* Sitewide Organization entity — the anchor for AI search citations */}
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: brand,
+            url: siteUrl,
+            logo: `${siteUrl}/og-image.png`,
+            description: tagline,
+            knowsAbout: [
+              "Car loan interest tax deduction",
+              "Auto loan interest deduction",
+              "OBBBA Section 70203",
+              "Qualified passenger vehicle loan interest",
+              "Schedule 1-A",
+              "Form 1098-VLI",
+              "T.D. 10054",
+              "VIN decoding",
+            ],
+          }}
+        />
       </body>
     </html>
   );

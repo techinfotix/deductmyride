@@ -55,6 +55,20 @@ export default function ObbbaDeductionsPage() {
         caps, phaseouts, and how to claim them.
       </p>
 
+      {/* Answer-first block — written for AI answers & featured snippets */}
+      <div className="card mt-6 border-emerald-200 bg-emerald-50/50 p-5">
+        <p className="text-[15px] leading-relaxed text-neutral-800">
+          <strong>Quick answer:</strong> OBBBA created{" "}
+          <strong>four new tax deductions for 2025–2028</strong>, all claimable
+          on <strong>Schedule 1-A</strong> without itemizing:{" "}
+          <strong>no tax on tips</strong> (up to $25,000),{" "}
+          <strong>no tax on overtime</strong> (up to $12,500 single / $25,000
+          joint), <strong>car loan interest</strong> (up to $10,000), and a{" "}
+          <strong>$6,000 senior bonus</strong> per person 65+. Each has its own
+          income phase-out.
+        </p>
+      </div>
+
       <section className="mt-10" aria-label="The four deductions">
         <h2 className="text-2xl font-bold text-neutral-900">
           1. No tax on tips — up to $25,000
@@ -181,6 +195,21 @@ export default function ObbbaDeductionsPage() {
             name: f.q,
             acceptedAnswer: { "@type": "Answer", text: f.a },
           })),
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline:
+            "The 4 New OBBBA Tax Deductions for 2026 (Tips, Overtime, Car Loans, Seniors)",
+          description:
+            "OBBBA created 4 new tax deductions for 2025–2028: no tax on tips (up to $25K), overtime (up to $12.5K), car loan interest (up to $10K), and a $6K senior bonus.",
+          url: `${siteUrl}/blog/obbba-new-tax-deductions-2026`,
+          author: { "@type": "Organization", name: brand, url: siteUrl },
+          publisher: { "@type": "Organization", name: brand, url: siteUrl },
+          datePublished: "2026-10-10",
+          dateModified: "2026-10-26",
         }}
       />
     </article>

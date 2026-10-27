@@ -31,7 +31,7 @@ const POPULAR_MODELS: Array<[string, string]> = [
 export const metadata: Metadata = {
   title: "Car Loan Interest Tax Deduction Checker — Does Your Car Qualify?",
   description:
-    "New US tax law lets you deduct up to $10,000/year in car loan interest — if your car is new, US-assembled, and for personal use. Check your VIN in 60 seconds.",
+    "Are car loans tax deductible? Yes — new US law lets you deduct up to $10,000/year in car loan interest if your car is new, US-assembled, and for personal use. Check your VIN in 60 seconds.",
   alternates: { canonical: siteUrl },
   openGraph: {
     title: "Does your car qualify for the $10,000 car loan interest deduction?",
@@ -42,6 +42,14 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
+  {
+    q: "Are car loans tax deductible?",
+    a: "Yes — since 2025, up to $10,000 per year of interest paid on a qualifying car loan is tax deductible, for tax years 2025–2028. The car must be new, finally assembled in the USA, for personal use, with a loan originated after December 31, 2024.",
+  },
+  {
+    q: "Can I claim car payments on my taxes?",
+    a: "No — not the payments themselves. Only the interest portion of your car payments is deductible, never the principal. Your lender statement separates interest from principal; use the interest-paid total.",
+  },
   {
     q: "Is car loan interest tax-deductible in 2026?",
     a: "Yes — under the OBBBA (§70203), you can deduct up to $10,000 per year of interest paid on a qualifying new-vehicle auto loan. The vehicle must be new, finally assembled in the USA, for personal use, and the loan must have originated after December 31, 2024.",
@@ -232,6 +240,13 @@ export default function Home() {
           name: brand,
           url: siteUrl,
           description: tagline,
+          publisher: {
+            "@type": "Organization",
+            name: brand,
+            url: siteUrl,
+            logo: `${siteUrl}/og-image.png`,
+          },
+          inLanguage: "en-US",
         }}
       />
       <JsonLd

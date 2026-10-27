@@ -55,6 +55,18 @@ export default function EvVsDeductionPage() {
         (2025–2028). Here&apos;s how they compare.
       </p>
 
+      {/* Answer-first block — written for AI answers & featured snippets */}
+      <div className="card mt-6 border-emerald-200 bg-emerald-50/50 p-5">
+        <p className="text-[15px] leading-relaxed text-neutral-800">
+          <strong>Quick answer:</strong> The federal EV tax credit is{" "}
+          <strong>expired</strong> — it no longer exists for new purchases. The{" "}
+          <strong>car loan interest deduction</strong> (up to $10,000/year,
+          2025–2028) is the federal break available now: it works for any new,
+          US-assembled personal vehicle — EV or gas — and is worth up to
+          $10,000 × your tax rate (e.g., $2,200 at 22%).
+        </p>
+      </div>
+
       <section className="mt-10">
         <h2 className="text-2xl font-bold text-neutral-900">Side-by-side</h2>
         <div className="mt-4 overflow-x-auto">
@@ -171,6 +183,21 @@ export default function EvVsDeductionPage() {
             name: f.q,
             acceptedAnswer: { "@type": "Answer", text: f.a },
           })),
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline:
+            "Car Loan Interest Deduction vs EV Tax Credit in 2026: Which Saves More?",
+          description:
+            "The federal EV tax credit is gone. The new car loan interest deduction (up to $10K/yr, 2025–2028) is here. Compare the two and see which saves you more in 2026.",
+          url: `${siteUrl}/blog/car-loan-interest-deduction-vs-ev-tax-credit`,
+          author: { "@type": "Organization", name: brand, url: siteUrl },
+          publisher: { "@type": "Organization", name: brand, url: siteUrl },
+          datePublished: "2026-10-10",
+          dateModified: "2026-10-26",
         }}
       />
     </article>

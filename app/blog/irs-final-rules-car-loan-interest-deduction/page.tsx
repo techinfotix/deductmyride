@@ -175,8 +175,19 @@ export default function FinalRulesPage() {
           url: `${siteUrl}/blog/irs-final-rules-car-loan-interest-deduction`,
           author: { "@type": "Organization", name: brand },
           datePublished: "2026-10-18",
-          dateModified: "2026-10-18",
+          dateModified: "2026-10-26",
           mainEntityOfPage: `${siteUrl}/blog/irs-final-rules-car-loan-interest-deduction`,
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
         }}
       />
 

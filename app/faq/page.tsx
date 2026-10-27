@@ -6,19 +6,59 @@ import JsonLd from "@/components/JsonLd";
 import { brand, siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "FAQ — Car Loan Interest Tax Deduction",
+  title: "Are Car Loans Tax Deductible? FAQ — Deduct Car Loan Interest (2026)",
   description:
-    "Answers to the most common questions about the US car loan interest tax deduction: eligibility, the $10,000 cap, phase-outs, VIN checks, and how to claim it.",
+    "Are car loans tax deductible? Yes — up to $10,000/year of car loan interest for 2025–2028 if your car is new, US-assembled, and for personal use. Can you deduct auto loan interest, claim car payments, or write off interest paid? Answered here.",
   alternates: { canonical: `${siteUrl}/faq` },
   openGraph: {
-    title: `FAQ | ${brand}`,
-    description: "Every common question about the car loan interest deduction, answered in plain English.",
+    title: "Are car loans tax deductible? FAQ | DeductMyRide",
+    description: "Can you deduct auto loan interest on your taxes? Can you claim car payments? Every version of the question, answered in plain English.",
     url: `${siteUrl}/faq`,
     images: [{ url: `${siteUrl}/og-image.png`, width: 1200, height: 630 }],
   },
 };
 
 const faqs = [
+  {
+    q: "Are car loans tax deductible?",
+    a: "Yes — since 2025. Car loans are tax deductible up to $10,000 per year of interest paid, but only for a qualifying loan: the car must be new, finally assembled in the USA, for personal use, and the loan must have started after December 31, 2024. The deduction covers tax years 2025–2028 and is claimed on Schedule 1-A.",
+  },
+  {
+    q: "Can you write off interest on a car loan?",
+    a: "Yes — you can write off up to $10,000 per year of interest on a car loan for tax years 2025–2028, if the vehicle is new, US-assembled, and for personal use and the loan originated after December 31, 2024. Before 2025, personal car loan interest was generally not deductible at all. You write it off on Schedule 1-A, Part IV, with your VIN.",
+  },
+  {
+    q: "Can I deduct car interest on my taxes?",
+    a: "Yes, if you meet the 4 rules: new vehicle, final assembly in the USA, personal use, and a loan originated after December 31, 2024. On your tax return, enter the interest you actually paid during the year on Schedule 1-A, Part IV, and include the vehicle's VIN. Your tax saving is the deduction times your marginal rate — a $10,000 deduction at 22% saves $2,200.",
+  },
+  {
+    q: "Can you deduct auto loan interest on your taxes?",
+    a: "Yes — auto loan interest is deductible up to $10,000 per year for tax years 2025–2028 under the same law as car loan interest. It must be interest on a first-lien loan for a new, US-assembled, personal-use vehicle originated after December 31, 2024. Lease payments and used-car loan interest do not count.",
+  },
+  {
+    q: "Can I deduct car loan interest?",
+    a: "Yes, up to $10,000 per year of interest paid, if all 4 rules pass: the vehicle is new, finally assembled in the USA, for personal use, and the loan started after December 31, 2024. If any rule fails, none of the interest is deductible under this law — and income phase-outs above $100,000 MAGI ($200,000 joint) can reduce it. Check your VIN before you file.",
+  },
+  {
+    q: "Can I claim car interest on my taxes?",
+    a: "Yes — claiming car interest means entering the interest you paid on Schedule 1-A, Part IV of your return, with the vehicle's VIN. You need a qualifying new, US-assembled, personal-use vehicle and a loan originated after December 31, 2024. No itemizing is required. For the 2026 tax year, lenders send Form 1098-VLI when qualified interest paid is $600 or more.",
+  },
+  {
+    q: "Can I claim car payments on my taxes?",
+    a: "No — you cannot claim car payments themselves. Only the interest portion of each payment is deductible, never the principal portion that pays down the loan balance. For example, in a $500 monthly payment with $180 of interest, only the $180 counts — and only if all 4 qualifying rules pass. Your lender statement separates interest from principal.",
+  },
+  {
+    q: "Can I claim my car loan interest on my taxes?",
+    a: "Yes — claim it on your own return if the loan is in your name and the vehicle qualifies: new, finally assembled in the USA, for personal use, with a loan originated after December 31, 2024. Enter the interest paid and the VIN on Schedule 1-A, Part IV. Joint filers share one $10,000 cap; spouses filing separately each get a $10,000 cap. Keep your loan agreement and interest statements.",
+  },
+  {
+    q: "Can you deduct interest paid on a car loan?",
+    a: "Yes — the deduction is for interest actually paid during the tax year, up to $10,000, not interest billed but unpaid. Use the interest-paid total on your year-end lender statement. If you paid $7,000 in interest, your deduction is $7,000; if you paid $14,000, it is capped at $10,000 — provided the vehicle and loan meet all 4 rules.",
+  },
+  {
+    q: "Is auto interest deductible in 2025?",
+    a: "Yes — 2025 is the first tax year auto interest is deductible, under OBBBA §70203. If you bought a qualifying new, US-assembled car in 2025 with a loan originated after December 31, 2024, claim the interest you paid in 2025 on your 2025 return (filed in 2026) via Schedule 1-A, Part IV, with the VIN. Form 1098-VLI reporting starts with the 2026 tax year, so for 2025 use your lender statements.",
+  },
   {
     q: "Is car loan interest tax-deductible in 2026?",
     a: "Yes. Under OBBBA §70203, you can deduct up to $10,000 per year of interest paid on a qualifying new-vehicle auto loan for tax years 2025–2028.",
@@ -73,10 +113,12 @@ export default function FaqPage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-10">
       <h1 className="text-3xl font-bold text-neutral-900 sm:text-4xl">
-        Frequently asked questions
+        Are car loans tax deductible? Frequently asked questions
       </h1>
       <p className="mt-3 text-neutral-600">
-        Plain-English answers about the US car loan interest tax deduction (OBBBA §70203).
+        Plain-English answers about the US car loan interest tax deduction (OBBBA §70203) — can you
+        deduct auto loan interest on your taxes, write off interest paid on a car loan, or claim
+        car payments? Each question below is answered directly.
       </p>
 
       {/* IN SHORT — AEO direct-answer block */}

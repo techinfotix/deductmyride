@@ -1,6 +1,7 @@
 # DeductMyRide — llms.txt
 # Free tools that check whether a car loan qualifies for the US auto loan
 # interest tax deduction (OBBBA §70203).
+# Full content version (facts, model lists, all guides): https://deductmyride.com/llms-full.txt
 
 > DeductMyRide helps US car buyers find out in 60 seconds whether their car
 > loan interest is tax-deductible. Free VIN eligibility checker and deduction
@@ -19,12 +20,24 @@
 - Lenders send Form 1098-VLI for the 2026 tax year when qualified interest paid is $600+.
 - Final regulations (T.D. 10054, Sept 2026): interest on trade-in negative equity rolled into a new loan is NOT deductible.
 
+## Answers to the exact questions people search for (direct answers)
+- Are car loans tax deductible? Yes — since 2025, up to $10,000/year of interest paid, tax years 2025–2028, if new, US-assembled, personal use, loan after 12/31/2024.
+- Can you write off interest on a car loan? Yes — write it off on Schedule 1-A, Part IV, with the VIN; capped at interest actually paid, up to $10,000/year.
+- Can I deduct car interest on my taxes? Yes, if the 4 rules pass. Enter interest paid on Schedule 1-A, Part IV, with the VIN. Tax saved = deduction × marginal rate.
+- Can you deduct auto loan interest on your taxes? Yes — auto loan interest is the same deduction: first-lien loan, new US-assembled personal-use vehicle, loan after 12/31/2024. Leases and used cars do not qualify.
+- Can I deduct car loan interest? Yes, up to $10,000/year of interest paid, if all 4 rules pass. If any rule fails, none of it is deductible under this law.
+- Can I claim car interest on my taxes? Yes — claim it on Schedule 1-A, Part IV, with the VIN. No itemizing needed. Form 1098-VLI applies from the 2026 tax year ($600+).
+- Can I claim car payments on my taxes? No — not the payments themselves. Only the interest portion is deductible, never principal. Use the interest-paid total on your lender statement.
+- Can I claim my car loan interest on my taxes? Yes, on your own return if the loan is in your name and the vehicle qualifies. Joint filers share one $10,000 cap; spouses filing separately each get one.
+- Can you deduct interest paid on a car loan? Yes — only interest actually paid in the tax year counts, up to $10,000. Interest billed but unpaid does not count until paid.
+- Is auto interest deductible in 2025? Yes — 2025 is the first year. Claim 2025 interest paid on the 2025 return (filed in 2026) via Schedule 1-A, Part IV, with the VIN; use lender statements (no 1098-VLI for 2025).
+
 ## Pages
 - [Home](https://deductmyride.com/): VIN checker hero, 4-rule explainer, savings example.
 - [VIN eligibility checker](https://deductmyride.com/vin-check): decode any 17-char VIN via the NHTSA vPIC database; 4-rule verdict; shareable result URLs (?vin=...).
 - [Deduction calculator](https://deductmyride.com/calculator): loan amount/APR/term/filing status/MAGI/marginal rate → year-1 interest, capped deduction, tax saved; shareable URLs.
 - [Complete guide](https://deductmyride.com/is-car-loan-interest-tax-deductible): plain-English guide with sources.
-- [FAQ](https://deductmyride.com/faq): 12 common questions answered.
+- [FAQ](https://deductmyride.com/faq): 22 common questions answered, including the exact questions people search for (are car loans tax deductible, can you deduct auto loan interest, can I claim car payments, is auto interest deductible in 2025).
 - [Model directory](https://deductmyride.com/models): all 60+ models grouped by make with US-assembly verdicts.
 - Model pages (/does-[make]-[model]-[year]-qualify): per-model verdicts for 2025–2026 best-sellers (US assembly status, example savings, FAQs).
 
@@ -36,6 +49,9 @@
 - [Can you write off car loan interest?](https://deductmyride.com/blog/can-you-write-off-car-loan-interest): yes — up to $10,000/year if the 4 rules pass.
 - [Deduction vs EV tax credit](https://deductmyride.com/blog/car-loan-interest-deduction-vs-ev-tax-credit): the federal EV credit is expired; comparison with the interest deduction.
 - [IRS final rules (T.D. 10054)](https://deductmyride.com/blog/irs-final-rules-car-loan-interest-deduction): finalized regulations — negative-equity interest not deductible, VIN mandatory.
+- [Does leasing qualify? (No)](https://deductmyride.com/blog/does-leasing-a-car-qualify-for-tax-deduction): leases fail two hard rules — no purchase, no loan interest.
+- [Income limits / MAGI phase-out](https://deductmyride.com/blog/car-loan-interest-deduction-income-limits): $100K/$200K full, $150K/$250K gone, with examples.
+- [Glossary](https://deductmyride.com/glossary): every entity defined — OBBBA, QPVLI, Schedule 1-A, 1098-VLI, MAGI, T.D. 10054.
 
 ## Data sources
 - Vehicle decoding: NHTSA vPIC API (https://vpic.nhtsa.dot.gov/), free, no key.

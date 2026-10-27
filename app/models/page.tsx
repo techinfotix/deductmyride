@@ -96,10 +96,70 @@ export default function ModelsPage() {
         ))}
       </div>
 
+      <section className="mt-12 max-w-3xl" aria-labelledby="models-faq-heading">
+        <h2 id="models-faq-heading" className="text-2xl font-bold text-neutral-900">
+          Model lookup questions
+        </h2>
+        <div className="mt-6 space-y-4">
+          {[
+            {
+              q: "What does 'Check VIN' mean on a model?",
+              a: "That model is built in more than one country, so assembly depends on the individual car. Decode your VIN — the plant country in the result is the answer for your specific vehicle.",
+            },
+            {
+              q: "Why is my model not listed?",
+              a: "We cover the 60+ best-selling 2025 and 2026 models. If yours isn't here, the VIN checker still works for any vehicle — it decodes directly from the NHTSA database.",
+            },
+            {
+              q: "Do 2025 and 2026 versions of the same model differ?",
+              a: "Sometimes. Assembly plants can change between model years, so always check the verdict page for your exact year — or better, your VIN.",
+            },
+          ].map((f) => (
+            <div key={f.q} className="card p-5">
+              <h3 className="font-semibold text-neutral-900">{f.q}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-neutral-600">{f.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <div className="mt-12">
         <Disclaimer />
         <p className="mt-3 text-xs text-neutral-500">{DISCLAIMER}</p>
       </div>
+
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "What does 'Check VIN' mean on a model?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "That model is built in more than one country, so assembly depends on the individual car. Decode your VIN — the plant country in the result is the answer for your specific vehicle.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Why is my model not listed?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "We cover the 60+ best-selling 2025 and 2026 models. If yours isn't here, the VIN checker still works for any vehicle — it decodes directly from the NHTSA database.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Do 2025 and 2026 versions of the same model differ?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Sometimes. Assembly plants can change between model years, so always check the verdict page for your exact year — or better, your VIN.",
+              },
+            },
+          ],
+        }}
+      />
 
       <JsonLd
         data={{
