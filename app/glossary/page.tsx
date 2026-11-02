@@ -7,9 +7,8 @@ import Disclaimer from "@/components/Disclaimer";
 const PAGE_URL = `${siteUrl}/glossary`;
 
 export const metadata: Metadata = {
-  title: `Car Loan Tax Deduction Glossary: OBBBA, Schedule 1-A, MAGI & More | ${brand}`,
-  description:
-    "Plain-English definitions of every term behind the car loan interest deduction: OBBBA, QPVLI, Schedule 1-A, Form 1098-VLI, MAGI, final assembly, T.D. 10054, and more.",
+  title: `Car Loan Tax Glossary: OBBBA, Schedule 1-A, MAGI`,
+  description: "Plain-English definitions of every term behind the car loan interest deduction: OBBBA, QPVLI, Schedule 1-A, Form 1098-VLI, and MAGI.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: `Car Loan Tax Deduction Glossary | ${brand}`,

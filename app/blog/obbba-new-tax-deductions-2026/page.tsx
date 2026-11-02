@@ -5,9 +5,8 @@ import JsonLd from "@/components/JsonLd";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
-  title: "The 4 New OBBBA Tax Deductions for 2026 (Tips, Overtime, Car Loans, Seniors)",
-  description:
-    "OBBBA created 4 new tax deductions for 2025–2028: no tax on tips (up to $25K), overtime (up to $12.5K), car loan interest (up to $10K), and a $6K senior bonus. See caps, phaseouts, and how to claim them.",
+  title: "The 4 New OBBBA Tax Deductions for 2026",
+  description: "OBBBA created 4 new tax deductions for 2025–2028: tips (up to $25K), overtime ($12.5K), car loan interest ($10K), and a $6K senior bonus.",
   alternates: { canonical: `${siteUrl}/blog/obbba-new-tax-deductions-2026` },
   openGraph: {
     title: "The 4 New OBBBA Tax Deductions for 2026",
@@ -202,7 +201,7 @@ export default function ObbbaDeductionsPage() {
           "@context": "https://schema.org",
           "@type": "Article",
           headline:
-            "The 4 New OBBBA Tax Deductions for 2026 (Tips, Overtime, Car Loans, Seniors)",
+            "The 4 New OBBBA Tax Deductions for 2026",
           description:
             "OBBBA created 4 new tax deductions for 2025–2028: no tax on tips (up to $25K), overtime (up to $12.5K), car loan interest (up to $10K), and a $6K senior bonus.",
           url: `${siteUrl}/blog/obbba-new-tax-deductions-2026`,

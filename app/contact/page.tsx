@@ -6,12 +6,12 @@ const contactEmail =
   process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "contact@deductmyride.com";
 
 export const metadata: Metadata = {
-  title: `Contact Us | ${brand}`,
+  title: `Contact Us`,
   description:
     "Get in touch with the DeductMyRide team — questions about the car loan interest deduction, the VIN checker, or the site.",
   alternates: { canonical: `${siteUrl}/contact` },
   openGraph: {
-    title: `Contact Us | ${brand}`,
+    title: `Contact Us`,
     description: "Questions about the car loan interest deduction? Get in touch.",
     url: `${siteUrl}/contact`,
     images: [{ url: `${siteUrl}/og-image.png`, width: 1200, height: 630 }],
@@ -64,7 +64,7 @@ export default function ContactPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "ContactPage",
-          name: `Contact Us | ${brand}`,
+          name: `Contact Us`,
           url: `${siteUrl}/contact`,
         }}
       />

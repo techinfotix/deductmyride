@@ -8,9 +8,8 @@ import { vehicles, modelPagePath, type Vehicle } from "@/lib/vehicles";
 const PAGE_URL = `${siteUrl}/blog/which-cars-qualify-for-car-loan-interest-deduction`;
 
 export const metadata: Metadata = {
-  title: "Which Cars Qualify for the Car Loan Interest Deduction in 2026? (List)",
-  description:
-    "Full list: cars, trucks & SUVs that are finally assembled in the USA and qualify for the $10,000 car loan interest deduction — plus the popular models that DON'T qualify, and the ones where it depends on your VIN.",
+  title: "Which Cars Qualify for the Car Loan Interest Deduction?",
+  description: "Which cars qualify for the $10,000 car loan interest deduction in 2026? The 4 rules, plus the full list of US-assembled models.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "Which Cars Qualify for the Car Loan Interest Deduction? (2026 List)",
@@ -189,7 +188,7 @@ export default function WhichCarsQualifyPage() {
           "@context": "https://schema.org",
           "@type": "Article",
           headline:
-            "Which Cars Qualify for the Car Loan Interest Deduction in 2026? (List)",
+            "Which Cars Qualify for the Car Loan Interest Deduction?",
           description:
             "US-assembled models that qualify for the $10,000 car loan interest deduction, VIN-dependent models, and models that don't qualify.",
           url: PAGE_URL,

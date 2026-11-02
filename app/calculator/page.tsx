@@ -6,7 +6,7 @@ import JsonLd from "@/components/JsonLd";
 import { brand, siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Car Loan Interest Deduction Calculator — How Much Will You Save?",
+  title: "Car Loan Interest Deduction Calculator (2026)",
   description:
     "Estimate your yearly car loan interest deduction (up to $10,000) and your actual tax savings at your marginal rate. Free calculator with MAGI phase-out check.",
   alternates: { canonical: `${siteUrl}/calculator` },

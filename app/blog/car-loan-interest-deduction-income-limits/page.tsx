@@ -7,9 +7,8 @@ import Disclaimer from "@/components/Disclaimer";
 const PAGE_URL = `${siteUrl}/blog/car-loan-interest-deduction-income-limits`;
 
 export const metadata: Metadata = {
-  title: "Car Loan Interest Deduction Income Limits: MAGI Phase-Out Explained (2026)",
-  description:
-    "Full deduction up to $100,000 MAGI ($200,000 joint), shrinking $200 per $1,000 above, gone at $150,000/$250,000. Phase-out table, examples, and how to check your MAGI.",
+  title: "Car Loan Interest Deduction Income Limits (2026)",
+  description: "Full deduction up to $100,000 MAGI ($200,000 joint), shrinking $200 per $1,000 above, gone at $150,000/$250,000. Phase-out table and examples.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "Car Loan Interest Deduction Income Limits (MAGI Phase-Out)",
@@ -177,7 +176,7 @@ export default function IncomeLimitsPage() {
           "@context": "https://schema.org",
           "@type": "Article",
           headline:
-            "Car Loan Interest Deduction Income Limits: MAGI Phase-Out Explained (2026)",
+            "Car Loan Interest Deduction Income Limits (2026)",
           description:
             "Full deduction up to $100,000 MAGI ($200,000 joint), shrinking $200 per $1,000 above, gone at $150,000/$250,000.",
           url: PAGE_URL,

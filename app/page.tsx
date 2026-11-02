@@ -29,9 +29,8 @@ const POPULAR_MODELS: Array<[string, string]> = [
 ];
 
 export const metadata: Metadata = {
-  title: "Car Loan Interest Tax Deduction Checker — Does Your Car Qualify?",
-  description:
-    "Are car loans tax deductible? Yes — new US law lets you deduct up to $10,000/year in car loan interest if your car is new, US-assembled, and for personal use. Check your VIN in 60 seconds.",
+  title: "Car Loan Interest Tax Deduction Checker",
+  description: "Are car loans tax deductible? Yes — you can deduct up to $10,000/year in car loan interest if your car is new and US-assembled. Check your VIN in 60 seconds.",
   alternates: { canonical: siteUrl },
   openGraph: {
     title: "Does your car qualify for the $10,000 car loan interest deduction?",

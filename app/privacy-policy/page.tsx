@@ -4,12 +4,12 @@ import JsonLd from "@/components/JsonLd";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
-  title: `Privacy Policy | ${brand}`,
+  title: `Privacy Policy`,
   description:
     "How DeductMyRide collects, uses, and protects your information — including VIN lookups, cookies, analytics, and advertising.",
   alternates: { canonical: `${siteUrl}/privacy-policy` },
   openGraph: {
-    title: `Privacy Policy | ${brand}`,
+    title: `Privacy Policy`,
     description:
       "How DeductMyRide collects, uses, and protects your information.",
     url: `${siteUrl}/privacy-policy`,
@@ -183,7 +183,7 @@ export default function PrivacyPolicyPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "WebPage",
-          name: `Privacy Policy | ${brand}`,
+          name: `Privacy Policy`,
           url: `${siteUrl}/privacy-policy`,
         }}
       />

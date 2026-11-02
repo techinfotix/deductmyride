@@ -5,9 +5,8 @@ import JsonLd from "@/components/JsonLd";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
-  title: "Can You Write Off Car Loan Interest on Your Taxes? (2026 Rules)",
-  description:
-    "Generally no — but a new 2025–2028 law lets you deduct up to $10,000/year of car loan interest if your car is new, US-assembled, and for personal use. See the 4 rules.",
+  title: "Can You Write Off Car Loan Interest? (2026 Rules)",
+  description: "A new 2025–2028 law lets you deduct up to $10,000/year of car loan interest if your car is new, US-assembled, and for personal use. See the 4 rules.",
   alternates: { canonical: `${siteUrl}/blog/can-you-write-off-car-loan-interest` },
   openGraph: {
     title: "Can You Write Off Car Loan Interest on Your Taxes?",
@@ -198,7 +197,7 @@ export default function WriteOffPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "Article",
-          headline: "Can You Write Off Car Loan Interest on Your Taxes? (2026 Rules)",
+          headline: "Can You Write Off Car Loan Interest? (2026 Rules)",
           description:
             "Generally no — but a new 2025–2028 law lets you deduct up to $10,000/year of car loan interest if your car is new, US-assembled, and for personal use. See the 4 rules.",
           url: `${siteUrl}/blog/can-you-write-off-car-loan-interest`,

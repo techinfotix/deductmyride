@@ -22,16 +22,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/does-leasing-a-car-qualify-for-tax-deduction",
     "/blog/car-loan-interest-deduction-income-limits",
     "/glossary",
+    "/terms-of-use",
   ];
 
   const entries: MetadataRoute.Sitemap = staticPages.map((p) => ({
     url: `${siteUrl}${p}`,
-    lastModified: new Date(),
     changeFrequency: p === "" ? "weekly" : "monthly",
     priority:
       p === ""
         ? 1
-        : p === "/privacy-policy" || p === "/contact"
+        : p === "/privacy-policy" || p === "/contact" || p === "/terms-of-use"
           ? 0.5
           : p.startsWith("/blog/")
             ? 0.9
@@ -42,8 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const year of MODEL_YEARS) {
       entries.push({
         url: `${siteUrl}${modelPagePath(v, year)}`,
-        lastModified: new Date(),
-        changeFrequency: "monthly",
+            changeFrequency: "monthly",
         priority: 0.7,
       });
     }

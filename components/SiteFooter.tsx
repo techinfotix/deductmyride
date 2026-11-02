@@ -41,6 +41,7 @@ export default function SiteFooter() {
             <p className="text-sm font-semibold text-neutral-900">Legal</p>
             <ul className="mt-2 space-y-1 text-sm">
               <li><Link className="text-neutral-600 hover:text-neutral-900" href="/privacy-policy">Privacy Policy</Link></li>
+              <li><Link className="text-neutral-600 hover:text-neutral-900" href="/terms-of-use">Terms of Use</Link></li>
               <li><Link className="text-neutral-600 hover:text-neutral-900" href="/contact">Contact Us</Link></li>
             </ul>
             <p className="mt-3 text-xs leading-relaxed text-neutral-500">{DISCLAIMER}</p>

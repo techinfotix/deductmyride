@@ -11,12 +11,12 @@ import {
 } from "@/lib/vehicles";
 
 export const metadata: Metadata = {
-  title: `Does My Car Qualify? Browse 60+ Models | ${brand}`,
+  title: `Does My Car Qualify? Browse 60+ Models`,
   description:
     "Browse popular 2025 and 2026 cars, trucks, and SUVs and see whether each one meets the 4 rules for the $10,000 car loan interest tax deduction.",
   alternates: { canonical: `${siteUrl}/models` },
   openGraph: {
-    title: `Does My Car Qualify? Browse 60+ Models | ${brand}`,
+    title: `Does My Car Qualify? Browse 60+ Models`,
     description:
       "See whether popular 2025 and 2026 models meet the 4 rules for the car loan interest tax deduction.",
     url: `${siteUrl}/models`,

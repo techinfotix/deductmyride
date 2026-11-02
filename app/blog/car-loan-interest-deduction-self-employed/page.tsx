@@ -7,9 +7,8 @@ import Disclaimer from "@/components/Disclaimer";
 const PAGE_URL = `${siteUrl}/blog/car-loan-interest-deduction-self-employed`;
 
 export const metadata: Metadata = {
-  title: "Car Loan Interest Deduction for the Self-Employed (Schedule C + the New $10K Rule)",
-  description:
-    "Self-employed? You can deduct car loan interest two ways: the business-use share on Schedule C (even with the standard mileage rate), plus the new $10K OBBBA deduction for the personal share. Here's how they fit together.",
+  title: "Car Loan Interest Deduction for the Self-Employed",
+  description: "Self-employed? Deduct car loan interest two ways: the business-use share on Schedule C, plus the new $10,000 personal deduction. How both work.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "Car Loan Interest Deduction for the Self-Employed",
@@ -181,7 +180,7 @@ export default function SelfEmployedPage() {
           "@context": "https://schema.org",
           "@type": "Article",
           headline:
-            "Car Loan Interest Deduction for the Self-Employed (Schedule C + the New $10K Rule)",
+            "Car Loan Interest Deduction for the Self-Employed",
           description:
             "How self-employed drivers split car loan interest between Schedule C and the new Schedule 1-A deduction.",
           url: PAGE_URL,

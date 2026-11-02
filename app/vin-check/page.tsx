@@ -6,7 +6,7 @@ import JsonLd from "@/components/JsonLd";
 import { brand, siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Free VIN Check — Is My Car's Loan Interest Tax-Deductible?",
+  title: "Free VIN Check: Car Loan Interest Deduction",
   description:
     "Enter your 17-character VIN to check if your vehicle was finally assembled in the USA and meets the 4 rules for the $10,000 car loan interest tax deduction.",
   alternates: { canonical: `${siteUrl}/vin-check` },

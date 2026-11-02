@@ -68,7 +68,7 @@ export async function generateMetadata({
   const found = findVehicleBySlug(modelSlug);
   if (!found) return {};
   const { vehicle: v, year } = found;
-  const title = `Does a ${year} ${v.make} ${v.model} Qualify for the Car Loan Interest Deduction?`;
+  const title = `${year} ${v.make} ${v.model}: Car Loan Interest Deduction?`;
   const description = `Find out if a ${year} ${v.make} ${v.model} meets the 4 rules for the $10,000 car loan interest tax deduction. ${v.plantNote}`;
   const url = `${siteUrl}/${modelSlug}`;
   return {

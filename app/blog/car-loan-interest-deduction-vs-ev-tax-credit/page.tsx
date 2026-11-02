@@ -5,7 +5,7 @@ import JsonLd from "@/components/JsonLd";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
-  title: "Car Loan Interest Deduction vs EV Tax Credit in 2026: Which Saves More?",
+  title: "Car Loan Interest Deduction vs EV Tax Credit (2026)",
   description:
     "The federal EV tax credit is gone. The new car loan interest deduction (up to $10K/yr, 2025–2028) is here. Compare the two and see which saves you more in 2026.",
   alternates: { canonical: `${siteUrl}/blog/car-loan-interest-deduction-vs-ev-tax-credit` },
@@ -190,7 +190,7 @@ export default function EvVsDeductionPage() {
           "@context": "https://schema.org",
           "@type": "Article",
           headline:
-            "Car Loan Interest Deduction vs EV Tax Credit in 2026: Which Saves More?",
+            "Car Loan Interest Deduction vs EV Tax Credit (2026)",
           description:
             "The federal EV tax credit is gone. The new car loan interest deduction (up to $10K/yr, 2025–2028) is here. Compare the two and see which saves you more in 2026.",
           url: `${siteUrl}/blog/car-loan-interest-deduction-vs-ev-tax-credit`,

@@ -5,9 +5,8 @@ import JsonLd from "@/components/JsonLd";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
-  title: "IRS Finalizes Car Loan Interest Deduction Rules (T.D. 10054) — 2026",
-  description:
-    "The IRS finalized the car loan interest deduction rules on Sept 21, 2026 (T.D. 10054). The exact phase-out formula, lease exclusion, negative-equity rule, refinancing limits, and the new Form 1098-VLI — explained.",
+  title: "Car Loan Interest Deduction: IRS Final Rules (2026)",
+  description: "The IRS finalized the car loan interest deduction rules on Sept 21, 2026 (T.D. 10054): phase-out formula, lease exclusion, and Form 1098-VLI.",
   alternates: { canonical: `${siteUrl}/blog/irs-final-rules-car-loan-interest-deduction` },
   openGraph: {
     title: "IRS Finalizes Car Loan Interest Deduction Rules (T.D. 10054)",

@@ -9,9 +9,8 @@ import JsonLd from "@/components/JsonLd";
 import { brand, siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Is Car Loan Interest Tax-Deductible? The Complete 2026 Guide",
-  description:
-    "Are car loans tax deductible? Yes — up to $10,000/year of car loan interest for 2025–2028, if your car is new, US-assembled, and for personal use. Can you deduct auto loan interest or write off interest paid on a car loan? The 4 rules, MAGI phase-outs, and how to claim it.",
+  title: "Is Car Loan Interest Tax-Deductible? 2026 Guide",
+  description: "Are car loans tax deductible? Yes — up to $10,000/year for 2025–2028 if your car is new, US-assembled, and for personal use. The 4 rules and phase-outs.",
   alternates: { canonical: `${siteUrl}/is-car-loan-interest-tax-deductible` },
   openGraph: {
     title: `Is car loan interest tax-deductible? Complete guide | ${brand}`,

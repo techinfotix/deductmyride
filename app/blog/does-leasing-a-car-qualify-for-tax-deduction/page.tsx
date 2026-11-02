@@ -7,9 +7,8 @@ import Disclaimer from "@/components/Disclaimer";
 const PAGE_URL = `${siteUrl}/blog/does-leasing-a-car-qualify-for-tax-deduction`;
 
 export const metadata: Metadata = {
-  title: "Does Leasing a Car Qualify for the Car Loan Interest Deduction? (No — Here's Why)",
-  description:
-    "Leased cars do NOT qualify for the $10,000 car loan interest deduction: a lease is not a purchase, there's no loan, and lease payments aren't interest. See the rules and what to do instead.",
+  title: "Does Leasing a Car Qualify for the Tax Deduction?",
+  description: "Leased cars do NOT qualify for the $10,000 car loan interest deduction: a lease is not a purchase, there is no loan, and lease payments are not interest.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "Does Leasing a Car Qualify for the Tax Deduction?",

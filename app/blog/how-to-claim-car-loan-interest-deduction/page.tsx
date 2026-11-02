@@ -7,9 +7,8 @@ import Disclaimer from "@/components/Disclaimer";
 const PAGE_URL = `${siteUrl}/blog/how-to-claim-car-loan-interest-deduction`;
 
 export const metadata: Metadata = {
-  title: "How to Claim the Car Loan Interest Deduction (Schedule 1-A, Step by Step)",
-  description:
-    "Claim up to $10,000 of car loan interest on Schedule 1-A Part IV: get Form 1098-VLI from your lender, enter your VIN, apply the phase-out, and attach it to Form 1040. Full 2026 steps.",
+  title: "How to Claim the Car Loan Interest Deduction",
+  description: "Claim up to $10,000 of car loan interest on Schedule 1-A Part IV: get Form 1098-VLI, enter your VIN, apply the phase-out, and file correctly.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "How to Claim the Car Loan Interest Deduction (Schedule 1-A)",
@@ -199,7 +198,7 @@ export default function HowToClaimPage() {
           "@context": "https://schema.org",
           "@type": "Article",
           headline:
-            "How to Claim the Car Loan Interest Deduction (Schedule 1-A, Step by Step)",
+            "How to Claim the Car Loan Interest Deduction",
           description:
             "Claim up to $10,000 of car loan interest on Schedule 1-A Part IV with Form 1098-VLI and your VIN.",
           url: PAGE_URL,
