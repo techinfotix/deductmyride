@@ -270,6 +270,7 @@ export default function GuidePage() {
           url: `${siteUrl}/is-car-loan-interest-tax-deductible`,
           author: { "@type": "Organization", name: brand },
           publisher: { "@type": "Organization", name: brand },
+          dateModified: "2026-11-02",
         }}
       />
       <JsonLd
