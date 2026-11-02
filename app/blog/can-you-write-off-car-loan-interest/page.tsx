@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { brand, siteUrl, DISCLAIMER } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
@@ -182,6 +183,7 @@ export default function WriteOffPage() {
         <p className="mt-3 text-xs text-neutral-500">{DISCLAIMER}</p>
       </div>
 
+      <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: 'Can You Write Off Car Loan Interest? (2026 Rules)', item: `${siteUrl}/blog/can-you-write-off-car-loan-interest` }]} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

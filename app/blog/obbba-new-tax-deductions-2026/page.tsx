@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { brand, siteUrl, DISCLAIMER } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
@@ -185,6 +186,7 @@ export default function ObbbaDeductionsPage() {
         <p className="mt-3 text-xs text-neutral-500">{DISCLAIMER}</p>
       </div>
 
+      <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: 'The 4 New OBBBA Tax Deductions for 2026', item: `${siteUrl}/blog/obbba-new-tax-deductions-2026` }]} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

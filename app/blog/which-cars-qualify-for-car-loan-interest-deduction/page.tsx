@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { brand, siteUrl, DISCLAIMER } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Disclaimer from "@/components/Disclaimer";
 import { vehicles, modelPagePath, type Vehicle } from "@/lib/vehicles";
 
@@ -183,6 +184,7 @@ export default function WhichCarsQualifyPage() {
         <p className="mt-3 text-xs text-neutral-500">{DISCLAIMER}</p>
       </div>
 
+      <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: 'Which Cars Qualify for the Car Loan Interest Deduction?', item: PAGE_URL }]} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

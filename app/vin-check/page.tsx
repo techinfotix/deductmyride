@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import VinChecker from "@/components/VinChecker";
 import AdSlot from "@/components/AdSlot";
 import JsonLd from "@/components/JsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import { brand, siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -91,6 +92,7 @@ export default async function VinCheckPage({
         </div>
       </section>
 
+      <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: 'Free VIN Check: Car Loan Interest Deduction', item: `${siteUrl}/vin-check` }]} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

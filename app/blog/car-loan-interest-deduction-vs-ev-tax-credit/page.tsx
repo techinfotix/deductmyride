@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { brand, siteUrl, DISCLAIMER } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
@@ -174,6 +175,7 @@ export default function EvVsDeductionPage() {
         <p className="mt-3 text-xs text-neutral-500">{DISCLAIMER}</p>
       </div>
 
+      <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: 'Car Loan Interest Deduction vs EV Tax Credit (2026)', item: `${siteUrl}/blog/car-loan-interest-deduction-vs-ev-tax-credit` }]} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

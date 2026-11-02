@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { brand, siteUrl } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
@@ -116,6 +117,7 @@ export default function TermsOfUsePage() {
       </div>
 
       <Disclaimer />
+      <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: 'Terms of Use', item: `${siteUrl}/terms-of-use` }]} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { brand, siteUrl, DISCLAIMER } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Disclaimer from "@/components/Disclaimer";
 
 const PAGE_URL = `${siteUrl}/blog/car-loan-interest-deduction-income-limits`;
@@ -171,6 +172,7 @@ export default function IncomeLimitsPage() {
         <p className="mt-3 text-xs text-neutral-500">{DISCLAIMER}</p>
       </div>
 
+      <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: 'Car Loan Interest Deduction Income Limits (2026)', item: PAGE_URL }]} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

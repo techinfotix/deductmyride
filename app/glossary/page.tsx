@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { brand, siteUrl, DISCLAIMER } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Disclaimer from "@/components/Disclaimer";
 
 const PAGE_URL = `${siteUrl}/glossary`;
@@ -150,6 +151,7 @@ export default function GlossaryPage() {
         <p className="mt-3 text-xs text-neutral-500">{DISCLAIMER}</p>
       </div>
 
+      <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: 'Car Loan Tax Glossary: OBBBA, Schedule 1-A, MAGI', item: `${siteUrl}/glossary` }]} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

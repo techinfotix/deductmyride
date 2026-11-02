@@ -6,6 +6,7 @@ import AffiliateCTA from "@/components/AffiliateCTA";
 import EmailCapture from "@/components/EmailCapture";
 import Disclaimer from "@/components/Disclaimer";
 import JsonLd from "@/components/JsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import { brand, siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -260,6 +261,7 @@ export default function GuidePage() {
       <EmailCapture />
       <Disclaimer />
 
+      <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: 'Is Car Loan Interest Tax-Deductible? 2026 Guide', item: `${siteUrl}/is-car-loan-interest-tax-deductible` }]} />
       <JsonLd
         data={{
           "@context": "https://schema.org",
@@ -268,8 +270,9 @@ export default function GuidePage() {
           description: metadata.description,
           url: `${siteUrl}/is-car-loan-interest-tax-deductible`,
           image: `${siteUrl}/og-image.png`,
-          author: { "@type": "Organization", name: brand },
-          publisher: { "@type": "Organization", name: brand },
+          author: { "@type": "Organization", name: brand, url: siteUrl },
+          publisher: { "@type": "Organization", name: brand, url: siteUrl },
+          datePublished: "2026-10-02",
           dateModified: "2026-11-02",
         }}
       />

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { brand, siteUrl, DISCLAIMER } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
@@ -164,6 +165,7 @@ export default function FinalRulesPage() {
         </div>
       </section>
 
+      <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: 'Car Loan Interest Deduction: IRS Final Rules (2026)', item: `${siteUrl}/blog/irs-final-rules-car-loan-interest-deduction` }]} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

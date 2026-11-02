@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { brand, siteUrl, DISCLAIMER } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Disclaimer from "@/components/Disclaimer";
 
 const PAGE_URL = `${siteUrl}/blog/how-to-claim-car-loan-interest-deduction`;
@@ -193,6 +194,7 @@ export default function HowToClaimPage() {
         <p className="mt-3 text-xs text-neutral-500">{DISCLAIMER}</p>
       </div>
 
+      <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: 'How to Claim the Car Loan Interest Deduction', item: PAGE_URL }]} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

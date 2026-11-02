@@ -5,6 +5,7 @@ import Checklist, { type RuleState } from "@/components/Checklist";
 import AdSlot from "@/components/AdSlot";
 import Disclaimer from "@/components/Disclaimer";
 import JsonLd from "@/components/JsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import { brand, siteUrl } from "@/lib/site";
 import {
   vehicles,
@@ -266,6 +267,7 @@ export default async function ModelPage({
         <Disclaimer />
       </div>
 
+      <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: "Models", item: `${siteUrl}/models` }, { name: `${yearNum} ${v.make} ${v.model}`, item: `${siteUrl}/${modelSlug}` }]} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

@@ -3,6 +3,7 @@ import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import Disclaimer from "@/components/Disclaimer";
 import JsonLd from "@/components/JsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import { brand, siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -163,6 +164,7 @@ export default function FaqPage() {
         <Disclaimer />
       </div>
 
+      <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: 'Are Car Loans Tax Deductible? FAQ (2026)', item: `${siteUrl}/faq` }]} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

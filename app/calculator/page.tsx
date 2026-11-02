@@ -3,6 +3,7 @@ import DeductionCalculator from "@/components/DeductionCalculator";
 import AdSlot from "@/components/AdSlot";
 import AffiliateCTA from "@/components/AffiliateCTA";
 import JsonLd from "@/components/JsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import { brand, siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -80,6 +81,7 @@ export default function CalculatorPage() {
         </div>
       </section>
 
+      <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: 'Car Loan Interest Deduction Calculator (2026)', item: `${siteUrl}/calculator` }]} />
       <JsonLd
         data={{
           "@context": "https://schema.org",

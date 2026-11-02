@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { brand, siteUrl } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 const contactEmail =
   process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "contact@deductmyride.com";
@@ -60,6 +61,7 @@ export default function ContactPage() {
         </p>
       </div>
 
+      <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: 'Contact Us', item: `${siteUrl}/contact` }]} />
       <JsonLd
         data={{
           "@context": "https://schema.org",
