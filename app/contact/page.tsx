@@ -30,8 +30,8 @@ export default function ContactPage() {
       </h1>
       <p className="mt-4 text-[15px] leading-relaxed text-neutral-600">
         Questions about whether your car qualifies, how the deduction math
-        works, or something broken on the site? We read every message and
-        usually reply within 1–2 business days.
+        works, or something broken on the site? Send us a message with as
+        much detail as you can.
       </p>
 
       <div className="card mt-8 p-6">

@@ -89,8 +89,9 @@ export default function Home() {
             Is your car loan interest tax-deductible? Find out in 60 seconds.
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-neutral-600">
-            {tagline} Up to <strong className="text-neutral-900">$10,000 a year</strong> in
-            car loan interest could be deductible — but only if your vehicle meets 4 strict rules.
+            Up to <strong className="text-neutral-900">$10,000 a year</strong> in
+            car loan interest could be deductible — but only if your vehicle passes 4 strict rules.
+            Most cars fail on one rule: where the car was assembled.
           </p>
           <div className="mt-2 max-w-2xl">
             <HeroVinForm />
@@ -179,11 +180,10 @@ export default function Home() {
         {/* Popular models — internal links into the model-page cluster */}
         <section className="mt-12" aria-labelledby="models-heading">
           <h2 id="models-heading" className="text-2xl font-bold text-neutral-900">
-            Check popular models
+            Does your model qualify?
           </h2>
           <p className="mt-2 text-sm text-neutral-600">
-            See whether America&apos;s best-selling cars, trucks, and SUVs meet
-            the deduction rules.
+            See whether popular cars, trucks, and SUVs meet the deduction rules.
           </p>
           <ul className="mt-6 grid grid-cols-2 gap-2 text-sm sm:grid-cols-3 lg:grid-cols-4">
             {POPULAR_MODELS.map(([make, model]) => {
@@ -220,8 +220,22 @@ export default function Home() {
             ))}
           </div>
           <Link href="/faq" className="mt-4 inline-block text-sm font-semibold text-emerald-700 hover:text-emerald-800">
-            Read all FAQs →
+            Read all 22 FAQs →
           </Link>
+        </section>
+
+        {/* FINAL CTA — recap value, repeat primary CTA, risk reversal */}
+        <section className="card mt-12 border-emerald-200 bg-emerald-50/50 p-6" aria-labelledby="final-cta-heading">
+          <h2 id="final-cta-heading" className="text-2xl font-bold text-neutral-900">
+            Check your VIN before you file
+          </h2>
+          <p className="mt-2 text-neutral-600">
+            The deduction only helps if your car passes all 4 rules.
+          </p>
+          <Link href="/vin-check" className="mt-4 inline-block rounded-md bg-emerald-700 px-6 py-2.5 text-sm font-semibold text-white hover:bg-emerald-800">
+            Check my VIN
+          </Link>
+          <p className="mt-2 text-sm text-neutral-500">Free. No signup. Result in about 60 seconds.</p>
         </section>
 
         <AffiliateCTA />

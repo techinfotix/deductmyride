@@ -109,7 +109,7 @@ export default function ModelsPage() {
             },
             {
               q: "Why is my model not listed?",
-              a: "We cover the 60+ best-selling 2025 and 2026 models. If yours isn't here, the VIN checker still works for any vehicle — it decodes directly from the NHTSA database.",
+              a: "We cover 63 popular 2025 and 2026 models. If yours isn't here, the VIN checker still works for any vehicle — it decodes directly from the NHTSA database.",
             },
             {
               q: "Do 2025 and 2026 versions of the same model differ?",
@@ -128,6 +128,19 @@ export default function ModelsPage() {
         <Disclaimer />
         <p className="mt-3 text-xs text-neutral-500">{DISCLAIMER}</p>
       </div>
+
+      <section className="card mt-12 border-emerald-200 bg-emerald-50/50 p-6" aria-labelledby="models-cta-heading">
+        <h2 id="models-cta-heading" className="text-2xl font-bold text-neutral-900">
+          Your exact car is what matters
+        </h2>
+        <p className="mt-2 text-neutral-600">
+          Model pages cover the typical build. Your VIN gives the answer for your car.
+        </p>
+        <Link href="/vin-check" className="mt-4 inline-block rounded-md bg-emerald-700 px-6 py-2.5 text-sm font-semibold text-white hover:bg-emerald-800">
+          Check my VIN
+        </Link>
+        <p className="mt-2 text-sm text-neutral-500">Free. No signup.</p>
+      </section>
 
       <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: 'Does My Car Qualify? Browse 60+ Models', item: `${siteUrl}/models` }]} />
       <JsonLd

@@ -37,7 +37,7 @@ export default function HeroVinForm() {
         </button>
       </div>
       <p className="mt-2 text-xs text-neutral-500">
-        Free. No signup. We decode your VIN with the official NHTSA database.
+        Free. No signup. We decode your VIN with the official NHTSA database. The rules come from OBBBA §70203 and IRS final regulations (T.D. 10054).
       </p>
     </form>
   );

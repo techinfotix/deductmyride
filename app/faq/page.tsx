@@ -164,6 +164,21 @@ export default function FaqPage() {
         <Disclaimer />
       </div>
 
+      <section className="card mt-8 border-emerald-200 bg-emerald-50/50 p-6" aria-labelledby="faq-cta-heading">
+        <h2 id="faq-cta-heading" className="text-2xl font-bold text-neutral-900">
+          Still unsure? Check the car itself
+        </h2>
+        <p className="mt-2 text-neutral-600">
+          Your VIN settles the assembly question in about 60 seconds, and the calculator turns the answer into dollars.
+        </p>
+        <Link href="/vin-check" className="mt-4 inline-block rounded-md bg-emerald-700 px-6 py-2.5 text-sm font-semibold text-white hover:bg-emerald-800">
+          Check my VIN
+        </Link>
+        <Link href="/calculator" className="ml-4 mt-4 inline-block text-sm font-semibold text-emerald-700 hover:text-emerald-800">
+          Estimate your savings →
+        </Link>
+      </section>
+
       <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: 'Are Car Loans Tax Deductible? FAQ (2026)', item: `${siteUrl}/faq` }]} />
       <JsonLd
         data={{

@@ -34,7 +34,7 @@ export default async function VinCheckPage({
   return (
     <article className="mx-auto max-w-5xl px-4 py-10">
       <h1 className="text-3xl font-bold text-neutral-900 sm:text-4xl">
-        VIN eligibility checker
+        Does your car qualify? Check your VIN
       </h1>
       <p className="mt-3 max-w-3xl text-neutral-600">
         Enter your 17-character VIN. We decode it with the official NHTSA database to find

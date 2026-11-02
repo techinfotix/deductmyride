@@ -261,6 +261,21 @@ export default function GuidePage() {
       <EmailCapture />
       <Disclaimer />
 
+      <section className="card mt-10 border-emerald-200 bg-emerald-50/50 p-6" aria-labelledby="guide-cta-heading">
+        <h2 id="guide-cta-heading" className="text-2xl font-bold text-neutral-900">
+          Check your car before you claim it
+        </h2>
+        <p className="mt-2 text-neutral-700">
+          You now know the 4 rules. Run your VIN to see if your car passes them, then estimate what it is worth.
+        </p>
+        <Link href="/vin-check" className="mt-4 inline-block rounded-md bg-emerald-700 px-6 py-2.5 text-sm font-semibold text-white hover:bg-emerald-800">
+          Check my VIN
+        </Link>
+        <Link href="/calculator" className="ml-4 mt-4 inline-block text-sm font-semibold text-emerald-700 hover:text-emerald-800">
+          Try the free calculator →
+        </Link>
+      </section>
+
       <BreadcrumbJsonLd items={[{ name: "Home", item: siteUrl }, { name: 'Is Car Loan Interest Tax-Deductible? 2026 Guide', item: `${siteUrl}/is-car-loan-interest-tax-deductible` }]} />
       <JsonLd
         data={{
