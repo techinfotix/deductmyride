@@ -22,6 +22,13 @@ export default function robots(): MetadataRoute.Robots {
     "CCBot", // Common Crawl — feeds many LLM datasets
     "Bytespider", // ByteDance
     "cohere-ai", // Cohere
+    "Claude-SearchBot", // Anthropic — Claude search retrieval (RAG)
+    "DuckAssistBot", // DuckDuckGo — AI answers (RAG)
+    "YouBot", // You.com — AI search (RAG)
+    "Claude-User", // Anthropic — Claude user browsing
+    "Google-Agent", // Google — Gemini user browsing
+    "MistralAI-User", // Mistral — Le Chat user browsing
+    "Gemini-User", // Google — Gemini user browsing
   ];
 
   return {

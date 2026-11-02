@@ -31,6 +31,21 @@ const verdictBadge: Record<Vehicle["assembly"], { label: string; cls: string }> 
   "Non-USA": { label: "Not US-built", cls: "bg-red-100 text-red-800" },
 };
 
+const faqs = [
+            {
+              q: "What does 'Check VIN' mean on a model?",
+              a: "That model is built in more than one country, so assembly depends on the individual car. Decode your VIN — the plant country in the result is the answer for your specific vehicle.",
+            },
+            {
+              q: "Why is my model not listed?",
+              a: "We cover 63 popular 2025 and 2026 models. If yours isn't here, the VIN checker still works for any vehicle — it decodes directly from the NHTSA database. Start with your VIN, not the model list, for a definitive answer.",
+            },
+            {
+              q: "Do 2025 and 2026 versions of the same model differ?",
+              a: "Sometimes. Assembly plants can change between model years, so always check the verdict page for your exact year — or better, your VIN. A 2025 and a 2026 of the same model can come from different plants.",
+            },
+];
+
 export default function ModelsPage() {
   const byMake = new Map<string, Vehicle[]>();
   for (const v of vehicles) {
@@ -102,20 +117,7 @@ export default function ModelsPage() {
           Model lookup questions
         </h2>
         <div className="mt-6 space-y-4">
-          {[
-            {
-              q: "What does 'Check VIN' mean on a model?",
-              a: "That model is built in more than one country, so assembly depends on the individual car. Decode your VIN — the plant country in the result is the answer for your specific vehicle.",
-            },
-            {
-              q: "Why is my model not listed?",
-              a: "We cover 63 popular 2025 and 2026 models. If yours isn't here, the VIN checker still works for any vehicle — it decodes directly from the NHTSA database.",
-            },
-            {
-              q: "Do 2025 and 2026 versions of the same model differ?",
-              a: "Sometimes. Assembly plants can change between model years, so always check the verdict page for your exact year — or better, your VIN.",
-            },
-          ].map((f) => (
+          {faqs.map((f) => (
             <div key={f.q} className="card p-5">
               <h3 className="font-semibold text-neutral-900">{f.q}</h3>
               <p className="mt-2 text-sm leading-relaxed text-neutral-600">{f.a}</p>
@@ -134,7 +136,7 @@ export default function ModelsPage() {
           Your exact car is what matters
         </h2>
         <p className="mt-2 text-neutral-600">
-          Model pages cover the typical build. Your VIN gives the answer for your car.
+          Model pages cover the typical build for 63 models. Your VIN gives the answer for your car.
         </p>
         <Link href="/vin-check" className="mt-4 inline-block rounded-md bg-emerald-700 px-6 py-2.5 text-sm font-semibold text-white hover:bg-emerald-800">
           Check my VIN
@@ -147,32 +149,11 @@ export default function ModelsPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "FAQPage",
-          mainEntity: [
-            {
-              "@type": "Question",
-              name: "What does 'Check VIN' mean on a model?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "That model is built in more than one country, so assembly depends on the individual car. Decode your VIN — the plant country in the result is the answer for your specific vehicle.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "Why is my model not listed?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "We cover the 60+ best-selling 2025 and 2026 models. If yours isn't here, the VIN checker still works for any vehicle — it decodes directly from the NHTSA database.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "Do 2025 and 2026 versions of the same model differ?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "Sometimes. Assembly plants can change between model years, so always check the verdict page for your exact year — or better, your VIN.",
-              },
-            },
-          ],
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
         }}
       />
 

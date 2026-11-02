@@ -121,7 +121,7 @@ export default function Home() {
             The 4 rules your car must pass
           </h2>
           <p className="mt-2 text-neutral-600">
-            Miss even one, and the deduction doesn&apos;t apply. Here&apos;s the plain-English version:
+            Miss even one of the 4 rules, and the deduction doesn&apos;t apply. Here&apos;s the plain-English version:
           </p>
           <div className="mt-6">
             <Checklist />
@@ -183,7 +183,7 @@ export default function Home() {
             Does your model qualify?
           </h2>
           <p className="mt-2 text-sm text-neutral-600">
-            See whether popular cars, trucks, and SUVs meet the deduction rules.
+            See whether 63 popular cars, trucks, and SUVs meet the deduction rules.
           </p>
           <ul className="mt-6 grid grid-cols-2 gap-2 text-sm sm:grid-cols-3 lg:grid-cols-4">
             {POPULAR_MODELS.map(([make, model]) => {
@@ -252,7 +252,7 @@ export default function Home() {
           "@type": "WebSite",
           name: brand,
           url: siteUrl,
-          description: tagline,
+          description: "Free tools to check whether your car loan interest qualifies for the US tax deduction.",
           publisher: {
             "@type": "Organization",
             name: brand,

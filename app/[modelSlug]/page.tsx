@@ -139,11 +139,11 @@ export default async function ModelPage({
     },
     {
       q: `Does a used ${yearNum} ${v.make} ${v.model} qualify?`,
-      a: "No. Only new vehicles — where the original use begins with you — qualify, regardless of assembly location.",
+      a: "No. Only new vehicles — where the original use begins with you — qualify, regardless of assembly location. This includes certified pre-owned cars, which count as used for this rule. Leases fail the same way: you are not the original owner.",
     },
     {
       q: "How do I verify my specific vehicle?",
-      a: "Enter your 17-character VIN in our free VIN checker. It decodes the plant country from the official NHTSA database and checks all four rules.",
+      a: "Enter your 17-character VIN in our free VIN checker. It decodes the plant country from the official NHTSA database and checks all four rules. Your result also shows which of the 4 rules your vehicle passes.",
     },
   ];
 
@@ -220,7 +220,7 @@ export default async function ModelPage({
           Verify your exact vehicle
         </h2>
         <p className="mt-2 text-sm text-neutral-600">
-          Assembly can vary by trim and plant. The VIN never lies — decode yours free:
+          Assembly can vary by trim and plant. Your 17-character VIN never lies — decode yours free:
         </p>
         <Link
           href="/vin-check"

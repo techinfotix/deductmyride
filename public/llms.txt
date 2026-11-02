@@ -39,7 +39,7 @@
 - [Complete guide](https://deductmyride.com/is-car-loan-interest-tax-deductible): plain-English guide with sources.
 - [FAQ](https://deductmyride.com/faq): 22 common questions answered, including the exact questions people search for (are car loans tax deductible, can you deduct auto loan interest, can I claim car payments, is auto interest deductible in 2025).
 - [Model directory](https://deductmyride.com/models): all 60+ models grouped by make with US-assembly verdicts.
-- Model pages (/does-[make]-[model]-[year]-qualify): per-model verdicts for 2025–2026 best-sellers (US assembly status, example savings, FAQs).
+- Model pages (/does-[make]-[model]-[year]-qualify): per-model verdicts for 63 popular 2025–2026 models (US assembly status, example savings, FAQs).
 
 ## Guides (blog)
 - [The 4 new OBBBA tax deductions for 2026](https://deductmyride.com/blog/obbba-new-tax-deductions-2026): tips, overtime, car loan interest, senior bonus — caps, phaseouts, Schedule 1-A.

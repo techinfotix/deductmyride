@@ -19,6 +19,25 @@ export const metadata: Metadata = {
   },
 };
 
+const faqs = [
+            {
+              q: "Does a $10,000 deduction mean $10,000 back?",
+              a: "No. A deduction reduces taxable income, not your tax bill dollar-for-dollar. Your saving equals the deduction times your marginal tax rate — $10,000 × 22% = $2,200. The same math applies at any bracket: multiply your deduction by your rate.",
+            },
+            {
+              q: "What is my marginal tax rate?",
+              a: "The rate on your last dollar of income (10%, 12%, 22%, 24%, 32%, 35%, or 37% federally). Most middle-income filers are in the 12% or 22% bracket. The calculator lets you pick it directly.",
+            },
+            {
+              q: "What if my income is over $100,000?",
+              a: "The deduction phases out: $200 less for every $1,000 (or fraction) of MAGI above $100,000 single / $200,000 joint, disappearing at $150,000 / $250,000. The calculator applies this automatically. Enter your MAGI to see your exact reduced cap.",
+            },
+            {
+              q: "Does the calculator work for refinanced loans?",
+              a: "Yes — enter the refinanced loan's balance, rate, and term. Note that interest on trade-in negative equity rolled into the loan is not deductible under the final regulations. The refinanced loan must still be a first lien on a qualifying vehicle.",
+            },
+];
+
 export default function CalculatorPage() {
   return (
     <article className="mx-auto max-w-5xl px-4 py-10">
@@ -55,24 +74,7 @@ export default function CalculatorPage() {
           Calculator questions
         </h2>
         <div className="mt-6 space-y-4">
-          {[
-            {
-              q: "Does a $10,000 deduction mean $10,000 back?",
-              a: "No. A deduction reduces taxable income, not your tax bill dollar-for-dollar. Your saving equals the deduction times your marginal tax rate — $10,000 × 22% = $2,200.",
-            },
-            {
-              q: "What is my marginal tax rate?",
-              a: "The rate on your last dollar of income (10%, 12%, 22%, 24%, 32%, 35%, or 37% federally). Most middle-income filers are in the 12% or 22% bracket. The calculator lets you pick it directly.",
-            },
-            {
-              q: "What if my income is over $100,000?",
-              a: "The deduction phases out: $200 less for every $1,000 (or fraction) of MAGI above $100,000 single / $200,000 joint, disappearing at $150,000 / $250,000. The calculator applies this automatically.",
-            },
-            {
-              q: "Does the calculator work for refinanced loans?",
-              a: "Yes — enter the refinanced loan's balance, rate, and term. Note that interest on trade-in negative equity rolled into the loan is not deductible under the final regulations.",
-            },
-          ].map((f) => (
+          {faqs.map((f) => (
             <div key={f.q} className="card p-5">
               <h3 className="font-semibold text-neutral-900">{f.q}</h3>
               <p className="mt-2 text-sm leading-relaxed text-neutral-600">{f.a}</p>
@@ -86,40 +88,11 @@ export default function CalculatorPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "FAQPage",
-          mainEntity: [
-            {
-              "@type": "Question",
-              name: "Does a $10,000 deduction mean $10,000 back?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "No. A deduction reduces taxable income, not your tax bill dollar-for-dollar. Your saving equals the deduction times your marginal tax rate — $10,000 at 22% = $2,200.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "What is my marginal tax rate?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "The rate on your last dollar of income (10%, 12%, 22%, 24%, 32%, 35%, or 37% federally). Most middle-income filers are in the 12% or 22% bracket.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "What if my income is over $100,000?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "The deduction phases out: $200 less for every $1,000 (or fraction) of MAGI above $100,000 single / $200,000 joint, disappearing at $150,000 / $250,000.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "Does the calculator work for refinanced loans?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "Yes — enter the refinanced loan's balance, rate, and term. Note that interest on trade-in negative equity rolled into the loan is not deductible under the final regulations.",
-              },
-            },
-          ],
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
         }}
       />
       <JsonLd

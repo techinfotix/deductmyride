@@ -23,6 +23,25 @@ function CheckerWithParams({ vin }: { vin: string }) {
   return <VinChecker initialVin={vin} />;
 }
 
+const faqs = [
+            {
+              q: "Where do I find my VIN?",
+              a: "On the driver's-side dashboard (visible through the windshield), the driver's door jamb sticker, your registration, or your insurance card. It's always 17 characters — letters and numbers, no spaces. If the dashboard plate is hard to read, the door jamb sticker lists the same VIN.",
+            },
+            {
+              q: "Is the VIN check free?",
+              a: "Yes — free, no signup, no email required. You can also share your result with a link. The decode uses the official NHTSA database, and your VIN is never sold.",
+            },
+            {
+              q: "Is my VIN stored?",
+              a: "VIN lookups are cached for at most 24 hours to keep the tool fast, then expire automatically. We never sell VINs or use them for any other purpose. Nothing is tied to your name or email, because the checker never asks for them.",
+            },
+            {
+              q: "What if my result says 'Mixed' or 'Check your VIN'?",
+              a: "Your model is built in more than one country. The VIN decode settles it: the plant country in your decode is the answer for your specific vehicle. Check the 'Plant country' field in your decoded result.",
+            },
+];
+
 export default async function VinCheckPage({
   searchParams,
 }: {
@@ -66,24 +85,7 @@ export default async function VinCheckPage({
           VIN checker questions
         </h2>
         <div className="mt-6 space-y-4">
-          {[
-            {
-              q: "Where do I find my VIN?",
-              a: "On the driver's-side dashboard (visible through the windshield), the driver's door jamb sticker, your registration, or your insurance card. It's always 17 characters — letters and numbers, no spaces.",
-            },
-            {
-              q: "Is the VIN check free?",
-              a: "Yes — free, no signup, no email required. You can also share your result with a link.",
-            },
-            {
-              q: "Is my VIN stored?",
-              a: "VIN lookups are cached for at most 24 hours to keep the tool fast, then expire automatically. We never sell VINs or use them for any other purpose.",
-            },
-            {
-              q: "What if my result says 'Mixed' or 'Check your VIN'?",
-              a: "Your model is built in more than one country. The VIN decode settles it: the plant country in your decode is the answer for your specific vehicle.",
-            },
-          ].map((f) => (
+          {faqs.map((f) => (
             <div key={f.q} className="card p-5">
               <h3 className="font-semibold text-neutral-900">{f.q}</h3>
               <p className="mt-2 text-sm leading-relaxed text-neutral-600">{f.a}</p>
@@ -97,40 +99,11 @@ export default async function VinCheckPage({
         data={{
           "@context": "https://schema.org",
           "@type": "FAQPage",
-          mainEntity: [
-            {
-              "@type": "Question",
-              name: "Where do I find my VIN?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "On the driver's-side dashboard (visible through the windshield), the driver's door jamb sticker, your registration, or your insurance card. It's always 17 characters.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "Is the VIN check free?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "Yes — free, no signup, no email required. You can also share your result with a link.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "Is my VIN stored?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "VIN lookups are cached for at most 24 hours to keep the tool fast, then expire automatically. We never sell VINs or use them for any other purpose.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "What if my result says 'Mixed' or 'Check your VIN'?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "Your model is built in more than one country. The VIN decode settles it: the plant country in your decode is the answer for your specific vehicle.",
-              },
-            },
-          ],
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
         }}
       />
       <JsonLd

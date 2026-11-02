@@ -134,8 +134,7 @@ export default function WriteOffPage() {
           What about business use or refinancing?
         </h2>
         <p className="mt-3 text-[15px] leading-relaxed text-neutral-700">
-          Business-use vehicle interest follows separate business-expense rules
-          — see a CPA. Refinanced loans can still qualify as long as the loan
+          Business-use vehicle interest follows separate business-expense rules — not the $10,000 personal deduction — see a CPA. Refinanced loans can still qualify as long as the loan
           remains a qualifying first lien tied to the original qualifying
           vehicle and the other rules hold. When in doubt, our{" "}
           <Link

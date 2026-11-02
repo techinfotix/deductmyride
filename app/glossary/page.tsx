@@ -34,13 +34,13 @@ const terms: Array<{
   },
   {
     term: "OBBBA (One Big Beautiful Bill Act)",
-    def: "The July 2025 law (P.L. 119-21) that created the car loan interest deduction plus three other new deductions — no tax on tips, no tax on overtime, and a senior bonus — all for 2025–2028.",
+    def: "OBBBA stands for the One Big Beautiful Bill Act, the July 2025 law (P.L. 119-21) that created the car loan interest deduction plus three other new deductions — no tax on tips, no tax on overtime, and a senior bonus — all for 2025–2028.",
     href: "/blog/obbba-new-tax-deductions-2026",
     linkText: "See all 4 new deductions →",
   },
   {
     term: "QPVLI (Qualified Passenger Vehicle Loan Interest)",
-    def: "The tax-code name for the interest that qualifies: interest on a loan used to buy a qualified passenger vehicle for personal use, secured by a first lien, originated after December 31, 2024.",
+    def: "QPVLI refers to interest on a loan used to buy a qualified passenger vehicle for personal use, secured by a first lien, originated after December 31, 2024.",
     href: "/is-car-loan-interest-tax-deductible",
     linkText: "What qualifies? →",
   },
@@ -58,13 +58,13 @@ const terms: Array<{
   },
   {
     term: "MAGI (Modified Adjusted Gross Income)",
-    def: "Your adjusted gross income with certain deductions added back. MAGI decides the phase-out: full deduction up to $100,000 (single) / $200,000 (joint), shrinking $200 per $1,000 above, gone at $150,000 / $250,000.",
+    def: "MAGI means your adjusted gross income with certain deductions added back. MAGI decides the phase-out: full deduction up to $100,000 (single) / $200,000 (joint), shrinking $200 per $1,000 above, gone at $150,000 / $250,000.",
     href: "/blog/car-loan-interest-deduction-income-limits",
     linkText: "Income limits explained →",
   },
   {
     term: "Final assembly",
-    def: "Where the vehicle was last assembled into a finished car. This is the rule most cars fail: the plant country — decoded from the VIN — decides, not the brand. A Honda built in Ohio qualifies; a Ford built in Mexico does not.",
+    def: "Final assembly means where the vehicle was last assembled into a finished car. This is the rule most cars fail: the plant country — decoded from the VIN — decides, not the brand. A Honda built in Ohio qualifies; a Ford built in Mexico does not.",
     href: "/vin-check",
     linkText: "Check your VIN →",
   },
@@ -76,13 +76,13 @@ const terms: Array<{
   },
   {
     term: "GVWR (Gross Vehicle Weight Rating)",
-    def: "The maximum loaded weight a vehicle is rated for. Qualifying vehicles must have a GVWR under 14,000 pounds — which covers cars, SUVs, minivans, pickup trucks, and motorcycles.",
+    def: "GVWR stands for Gross Vehicle Weight Rating: the maximum loaded weight a vehicle is rated for. Qualifying vehicles must have a GVWR under 14,000 pounds — which covers cars, SUVs, minivans, pickup trucks, and motorcycles.",
     href: "/is-car-loan-interest-tax-deductible",
     linkText: "Full rules →",
   },
   {
     term: "T.D. 10054",
-    def: "The Treasury Decision publishing the final regulations for the car loan interest deduction (September 2026). Key rulings: the VIN is mandatory, and interest on trade-in negative equity rolled into a new loan is not deductible.",
+    def: "T.D. 10054 refers to the Treasury Decision publishing the final regulations for the car loan interest deduction (September 2026). Key rulings: the VIN is mandatory, and interest on trade-in negative equity rolled into a new loan is not deductible.",
     href: "/blog/irs-final-rules-car-loan-interest-deduction",
     linkText: "What the final rules say →",
   },

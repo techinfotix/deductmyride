@@ -70,7 +70,7 @@ const sections = [
     id: "what-is-it",
     h: "What is the car loan interest deduction?",
     body: [
-      "The One Big Beautiful Bill Act (OBBBA), signed in 2025, created a new federal tax deduction for auto loan interest — section 70203 of the Act. For tax years 2025 through 2028, individuals can deduct up to $10,000 per year of interest paid on a loan used to buy a qualifying new vehicle.",
+      "The One Big Beautiful Bill Act (OBBBA), signed in 2025, created a new federal tax deduction for auto loan interest — section 70203 of the Act. For tax years 2025 through 2028, individuals can deduct up to $10,000 per year of interest paid on a loan used to buy a qualifying new vehicle. In tax law, qualified passenger vehicle loan interest (QPVLI) refers to interest paid on a qualifying new-vehicle loan — the interest this deduction covers.",
       "Before this law, car loan interest was generally not deductible for personal vehicles (unlike mortgage interest). This is the first broad federal deduction for personal auto loan interest in modern US tax history — which is why so many car buyers are asking about it now.",
     ],
   },
@@ -78,7 +78,7 @@ const sections = [
     id: "four-rules",
     h: "The 4 rules, explained",
     body: [
-      "The law is strict. All four conditions must be true at the same time:",
+      "The law is strict. All 4 conditions must be true at the same time:",
     ],
     checklist: true,
   },
@@ -95,7 +95,7 @@ const sections = [
     id: "above-the-line",
     h: "Above-the-line: no itemizing needed",
     body: [
-      "Most people take the standard deduction, which made older itemized-only deductions useless to them. This deduction is different: it's 'above the line,' meaning it reduces your adjusted gross income directly. You can claim it on top of the standard deduction.",
+      "Most people take the standard deduction ($16,100 single / $32,200 joint for 2026), which made older itemized-only deductions useless to them. This deduction is different: it's 'above the line,' meaning it reduces your adjusted gross income directly. You can claim it on top of the standard deduction.",
     ],
   },
   {
@@ -128,7 +128,7 @@ const sections = [
     id: "claim-car-payments",
     h: "Can I claim car payments on my taxes?",
     body: [
-      "No — not the payments themselves. Only the interest portion of your car payments is deductible. The principal portion, which pays down what you borrowed, is never deductible under this law.",
+      "No — not the payments themselves. Only the interest portion — up to $10,000 a year — of your car payments is deductible. The principal portion, which pays down what you borrowed, is never deductible under this law.",
       "Every monthly payment is a mix: early in a loan most of it is interest, later most of it is principal. Your lender's year-end statement separates the two — use the interest-paid total, not the total you paid. And the interest only counts if the vehicle and loan pass all 4 rules.",
     ],
   },
