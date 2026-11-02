@@ -194,6 +194,7 @@ export default function EvVsDeductionPage() {
           description:
             "The federal EV tax credit is gone. The new car loan interest deduction (up to $10K/yr, 2025–2028) is here. Compare the two and see which saves you more in 2026.",
           url: `${siteUrl}/blog/car-loan-interest-deduction-vs-ev-tax-credit`,
+          image: `${siteUrl}/og-image.png`,
           author: { "@type": "Organization", name: brand, url: siteUrl },
           publisher: { "@type": "Organization", name: brand, url: siteUrl },
           datePublished: "2026-10-10",

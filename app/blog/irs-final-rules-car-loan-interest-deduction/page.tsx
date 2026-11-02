@@ -172,6 +172,7 @@ export default function FinalRulesPage() {
             "IRS Finalizes Car Loan Interest Deduction Rules (T.D. 10054): 9 Things Now Official",
           description: metadata.description,
           url: `${siteUrl}/blog/irs-final-rules-car-loan-interest-deduction`,
+          image: `${siteUrl}/og-image.png`,
           author: { "@type": "Organization", name: brand },
           datePublished: "2026-10-18",
           dateModified: "2026-10-26",

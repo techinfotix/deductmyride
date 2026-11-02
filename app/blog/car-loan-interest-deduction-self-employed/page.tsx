@@ -184,6 +184,7 @@ export default function SelfEmployedPage() {
           description:
             "How self-employed drivers split car loan interest between Schedule C and the new Schedule 1-A deduction.",
           url: PAGE_URL,
+          image: `${siteUrl}/og-image.png`,
           author: { "@type": "Organization", name: brand, url: siteUrl },
           publisher: { "@type": "Organization", name: brand, url: siteUrl },
           datePublished: "2026-10-20",

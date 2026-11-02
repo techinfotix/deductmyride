@@ -192,6 +192,7 @@ export default function WhichCarsQualifyPage() {
           description:
             "US-assembled models that qualify for the $10,000 car loan interest deduction, VIN-dependent models, and models that don't qualify.",
           url: PAGE_URL,
+          image: `${siteUrl}/og-image.png`,
           author: { "@type": "Organization", name: brand, url: siteUrl },
           publisher: { "@type": "Organization", name: brand, url: siteUrl },
           datePublished: "2026-10-20",

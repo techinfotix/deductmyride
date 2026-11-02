@@ -161,6 +161,7 @@ export default function LeasingPage() {
           description:
             "Leased cars do NOT qualify: a lease is not a purchase and lease payments aren't loan interest.",
           url: PAGE_URL,
+          image: `${siteUrl}/og-image.png`,
           author: { "@type": "Organization", name: brand, url: siteUrl },
           publisher: { "@type": "Organization", name: brand, url: siteUrl },
           datePublished: "2026-10-26",

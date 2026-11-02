@@ -180,6 +180,7 @@ export default function IncomeLimitsPage() {
           description:
             "Full deduction up to $100,000 MAGI ($200,000 joint), shrinking $200 per $1,000 above, gone at $150,000/$250,000.",
           url: PAGE_URL,
+          image: `${siteUrl}/og-image.png`,
           author: { "@type": "Organization", name: brand, url: siteUrl },
           publisher: { "@type": "Organization", name: brand, url: siteUrl },
           datePublished: "2026-10-26",

@@ -202,6 +202,7 @@ export default function HowToClaimPage() {
           description:
             "Claim up to $10,000 of car loan interest on Schedule 1-A Part IV with Form 1098-VLI and your VIN.",
           url: PAGE_URL,
+          image: `${siteUrl}/og-image.png`,
           author: { "@type": "Organization", name: brand, url: siteUrl },
           publisher: { "@type": "Organization", name: brand, url: siteUrl },
           datePublished: "2026-10-20",

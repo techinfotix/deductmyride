@@ -205,6 +205,7 @@ export default function ObbbaDeductionsPage() {
           description:
             "OBBBA created 4 new tax deductions for 2025–2028: no tax on tips (up to $25K), overtime (up to $12.5K), car loan interest (up to $10K), and a $6K senior bonus.",
           url: `${siteUrl}/blog/obbba-new-tax-deductions-2026`,
+          image: `${siteUrl}/og-image.png`,
           author: { "@type": "Organization", name: brand, url: siteUrl },
           publisher: { "@type": "Organization", name: brand, url: siteUrl },
           datePublished: "2026-10-10",

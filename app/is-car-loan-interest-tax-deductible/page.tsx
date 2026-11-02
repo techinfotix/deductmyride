@@ -267,6 +267,7 @@ export default function GuidePage() {
           headline: "Is car loan interest tax-deductible? The complete 2026 guide",
           description: metadata.description,
           url: `${siteUrl}/is-car-loan-interest-tax-deductible`,
+          image: `${siteUrl}/og-image.png`,
           author: { "@type": "Organization", name: brand },
           publisher: { "@type": "Organization", name: brand },
           dateModified: "2026-11-02",

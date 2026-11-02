@@ -201,6 +201,7 @@ export default function WriteOffPage() {
           description:
             "Generally no — but a new 2025–2028 law lets you deduct up to $10,000/year of car loan interest if your car is new, US-assembled, and for personal use. See the 4 rules.",
           url: `${siteUrl}/blog/can-you-write-off-car-loan-interest`,
+          image: `${siteUrl}/og-image.png`,
           author: { "@type": "Organization", name: brand, url: siteUrl },
           publisher: { "@type": "Organization", name: brand, url: siteUrl },
           datePublished: "2026-10-10",
