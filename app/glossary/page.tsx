@@ -28,7 +28,7 @@ const terms: Array<{
 }> = [
   {
     term: "Car loan interest deduction",
-    def: "A temporary federal tax deduction (tax years 2025–2028) of up to $10,000 per year of interest paid on a qualifying auto loan. The vehicle must be new, finally assembled in the USA, for personal use, under 14,000 lbs, with a loan originated after 12/31/2024.",
+    def: "The car loan interest deduction means a temporary federal tax deduction (tax years 2025–2028) of up to $10,000 per year of interest paid on a qualifying auto loan. The vehicle must be new, finally assembled in the USA, for personal use, under 14,000 lbs, with a loan originated after 12/31/2024.",
     href: "/is-car-loan-interest-tax-deductible",
     linkText: "Read the complete guide →",
   },
@@ -46,13 +46,13 @@ const terms: Array<{
   },
   {
     term: "Schedule 1-A",
-    def: "The new IRS form where the four OBBBA deductions are claimed. Car loan interest goes in Part IV ('No Tax on Car Loan Interest'), with the vehicle's VIN — mandatory. The total flows to Form 1040.",
+    def: "Schedule 1-A is designed to collect the four OBBBA deductions. Car loan interest goes in Part IV ('No Tax on Car Loan Interest'), with the vehicle's VIN — mandatory. The total flows to Form 1040.",
     href: "/blog/how-to-claim-car-loan-interest-deduction",
     linkText: "How to claim, step by step →",
   },
   {
     term: "Form 1098-VLI",
-    def: "Vehicle Loan Interest — the new lender form. Starting with the 2026 tax year, lenders must send it by January 31 if you paid $600 or more in qualified vehicle loan interest.",
+    def: "Form 1098-VLI stands for Vehicle Loan Interest: the new lender form. Starting with the 2026 tax year, lenders must send it by January 31 if you paid $600 or more in qualified vehicle loan interest.",
     href: "/blog/how-to-claim-car-loan-interest-deduction",
     linkText: "Claiming steps →",
   },
@@ -70,7 +70,7 @@ const terms: Array<{
   },
   {
     term: "NHTSA vPIC",
-    def: "The National Highway Traffic Safety Administration's free Vehicle Identification database. Our VIN checker decodes your 17-character VIN against it to find your car's assembly plant.",
+    def: "NHTSA stands for the National Highway Traffic Safety Administration. Its free vPIC database is what our VIN checker decodes your 17-character VIN against to find your car's assembly plant.",
     href: "/vin-check",
     linkText: "Decode your VIN →",
   },
@@ -88,25 +88,25 @@ const terms: Array<{
   },
   {
     term: "Schedule C (business use)",
-    def: "The form where self-employed people deduct the business-use share of car loan interest as a business expense — claimable even on top of the standard mileage rate. The personal share can separately use the new $10,000 deduction.",
+    def: "Schedule C is designed for self-employed people to deduct the business-use share of car loan interest as a business expense — claimable even on top of the standard mileage rate. The personal share can separately use the new $10,000 deduction.",
     href: "/blog/car-loan-interest-deduction-self-employed",
     linkText: "Self-employed rules →",
   },
   {
     term: "Interest paid",
-    def: "Interest actually paid during the tax year — the only figure the deduction uses. Interest billed or accrued but not yet paid does not count until it is paid. Your lender's year-end statement (Form 1098-VLI from the 2026 tax year, $600+) shows the interest-paid total, capped at $10,000 for the deduction.",
+    def: "Interest paid means interest actually paid during the tax year — the only figure the deduction uses. Interest billed or accrued but not yet paid does not count until it is paid. Your lender's year-end statement (Form 1098-VLI from the 2026 tax year, $600+) shows the interest-paid total, capped at $10,000 for the deduction.",
     href: "/blog/can-you-write-off-car-loan-interest",
     linkText: "Write-off rules →",
   },
   {
     term: "Car payment (principal vs interest)",
-    def: "Every monthly car payment splits into interest (the cost of borrowing, potentially deductible) and principal (paying down the loan balance, never deductible). Only the interest portion can be claimed — never the full payment amount.",
+    def: "A car payment refers to your monthly payment, which splits into interest (the cost of borrowing, potentially deductible) and principal (paying down the loan balance, never deductible). Only the interest portion can be claimed — never the full payment amount.",
     href: "/is-car-loan-interest-tax-deductible",
     linkText: "What counts? →",
   },
   {
     term: "EV tax credit (expired)",
-    def: "The former federal clean-vehicle credit (up to $7,500) for electric vehicles. It has expired and is no longer available — the car loan interest deduction is the federal break new-car buyers use now.",
+    def: "The EV tax credit refers to the former federal clean-vehicle credit (up to $7,500) for electric vehicles. It has expired and is no longer available — the car loan interest deduction is the federal break new-car buyers use now.",
     href: "/blog/car-loan-interest-deduction-vs-ev-tax-credit",
     linkText: "Deduction vs EV credit →",
   },

@@ -155,7 +155,10 @@ export default function WriteOffPage() {
           Yes — and &ldquo;interest paid&rdquo; is the exact test. The
           deduction is the interest you <strong>actually paid</strong> during
           the tax year, up to $10,000, not the interest your loan accrued or
-          was billed for. If you paid $7,000 of interest in the year, your
+          was billed for.
+        </p>
+        <p className="mt-3 text-[15px] leading-relaxed text-neutral-700">
+          If you paid $7,000 of interest in the year, your
           deduction is $7,000; if you paid $14,000, it is capped at $10,000.
           Interest billed but not yet paid does not count until you pay it.
           Your year-end lender statement shows the interest-paid total — use

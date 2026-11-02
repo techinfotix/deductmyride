@@ -105,7 +105,7 @@ export default function CalculatorPage() {
           operatingSystem: "Web",
           offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
           description:
-            "Free calculator estimating the yearly car loan interest tax deduction (up to $10,000) and actual tax savings, with MAGI phase-out check.",
+            "Enter your loan details to estimate your yearly deduction (capped at $10,000 by law) and — more importantly — your actual tax savings.",
         }}
       />
     </article>

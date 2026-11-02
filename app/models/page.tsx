@@ -164,7 +164,7 @@ export default function ModelsPage() {
           name: `Browse models | ${brand}`,
           url: `${siteUrl}/models`,
           description:
-            "Whether popular 2025 and 2026 vehicles meet the car loan interest deduction rules.",
+            "Pick your make below to see whether popular 2025 and 2026 models are finally assembled in the USA — the rule that decides most cases.",
         }}
       />
     </article>

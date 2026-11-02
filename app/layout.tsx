@@ -65,7 +65,7 @@ export default function RootLayout({
             name: brand,
             url: siteUrl,
             logo: `${siteUrl}/og-image.png`,
-            description: tagline,
+            description: "Free tools to check whether your car loan interest qualifies for the US tax deduction.",
             knowsAbout: [
               "Car loan interest tax deduction",
               "Auto loan interest deduction",

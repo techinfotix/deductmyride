@@ -184,6 +184,9 @@ export default async function ModelPage({
         <h2 id="rules-h" className="text-xl font-bold text-neutral-900">
           The 4 rules for your {v.make} {v.model}
         </h2>
+        <p className="mt-2 text-sm text-neutral-600">
+          Your {yearNum} {v.make} {v.model} must pass all 4 rules. The checklist below shows each one.
+        </p>
         <div className="mt-4">
           <Checklist rules={ruleStates} />
         </div>
@@ -246,6 +249,7 @@ export default async function ModelPage({
 
       <section className="mt-10" aria-label="Other popular models">
         <h2 className="text-xl font-bold text-neutral-900">Check other popular models</h2>
+        <p className="mt-2 text-sm text-neutral-600">12 more models below — 63 in total.</p>
         <ul className="mt-4 grid grid-cols-2 gap-2 text-sm sm:grid-cols-3">
           {vehicles
             .filter((o) => o.make !== v.make || o.model !== v.model)

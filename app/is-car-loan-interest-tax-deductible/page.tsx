@@ -70,7 +70,8 @@ const sections = [
     id: "what-is-it",
     h: "What is the car loan interest deduction?",
     body: [
-      "The One Big Beautiful Bill Act (OBBBA), signed in 2025, created a new federal tax deduction for auto loan interest — section 70203 of the Act. For tax years 2025 through 2028, individuals can deduct up to $10,000 per year of interest paid on a loan used to buy a qualifying new vehicle. In tax law, qualified passenger vehicle loan interest (QPVLI) refers to interest paid on a qualifying new-vehicle loan — the interest this deduction covers.",
+      "The One Big Beautiful Bill Act (OBBBA), signed in 2025, created a new federal tax deduction for auto loan interest — section 70203 of the Act. For tax years 2025 through 2028, individuals can deduct up to $10,000 per year of interest paid on a loan used to buy a qualifying new vehicle.",
+      "In tax law, qualified passenger vehicle loan interest (QPVLI) refers to interest paid on a qualifying new-vehicle loan — the interest this deduction covers.",
       "Before this law, car loan interest was generally not deductible for personal vehicles (unlike mortgage interest). This is the first broad federal deduction for personal auto loan interest in modern US tax history — which is why so many car buyers are asking about it now.",
     ],
   },
@@ -144,7 +145,7 @@ const sections = [
     id: "misconceptions",
     h: "Common misconceptions",
     body: [
-      "“My car was made by an American brand, so it qualifies.” — Not necessarily. The rule is about where your specific vehicle was finally assembled, not the brand's headquarters. Many 'American' models are assembled in Mexico or Canada. Check your VIN.",
+      "“My car was made by an American brand, so it qualifies.” — Not necessarily. The rule is about where your specific vehicle was finally assembled, not the brand's headquarters. Many 'American' models are assembled in Mexico or Canada. Your 17-character VIN settles it.",
       "“Leases qualify too.” — No. The deduction is for interest on a loan used to purchase the vehicle. Lease payments are not loan interest.",
       "“I can deduct the whole monthly payment.” — No. Only the interest portion is deductible, not principal.",
     ],
@@ -165,12 +166,7 @@ export default function GuidePage() {
       <section aria-label="Summary" className="card mt-6 border-emerald-200 bg-emerald-50/50 p-6">
         <h2 className="text-lg font-bold text-neutral-900">In short</h2>
         <p className="mt-2 leading-relaxed text-neutral-800">
-          Yes — since 2025, US taxpayers can deduct up to <strong>$10,000 per year</strong> of car
-          loan interest under OBBBA §70203. The vehicle must be <strong>new</strong>,{" "}
-          <strong>finally assembled in the USA</strong>, for <strong>personal use</strong>, with a
-          loan originated <strong>after December 31, 2024</strong>. It is an above-the-line
-          deduction (no itemizing needed) and phases out above{" "}
-          <strong>$100k MAGI single / $200k joint</strong>.
+          Yes — since 2025, you can deduct up to <strong>$10,000 per year</strong> of car loan interest under OBBBA §70203. The vehicle must be <strong>new</strong>, <strong>finally assembled in the USA</strong>, for <strong>personal use</strong>, with a loan originated <strong>after December 31, 2024</strong>. It is an above-the-line deduction (no itemizing needed) and phases out above <strong>$100k/$200k MAGI</strong>.
         </p>
       </section>
 

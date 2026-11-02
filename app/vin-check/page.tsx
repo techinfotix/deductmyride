@@ -116,7 +116,7 @@ export default async function VinCheckPage({
           operatingSystem: "Web",
           offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
           description:
-            "Free tool that decodes a VIN via the NHTSA database and checks the vehicle against the 4 rules of the US car loan interest tax deduction.",
+            "We decode it with the official NHTSA database to find your vehicle's final assembly country, then check it against the 4 rules of the car loan interest deduction (OBBBA §70203).",
         }}
       />
     </article>
