@@ -69,7 +69,7 @@ export default function RootLayout({
             knowsAbout: [
               "Car loan interest tax deduction",
               "Auto loan interest deduction",
-              "OBBBA Section 70203",
+              "OBBBA §70203",
               "Qualified passenger vehicle loan interest",
               "Schedule 1-A",
               "Form 1098-VLI",

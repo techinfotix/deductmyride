@@ -69,6 +69,18 @@ export default function CalculatorPage() {
       <AdSlot slot="calculator-bottom" label="In-article responsive ad" />
       <AffiliateCTA heading="Ready to claim it on your return?" />
 
+      <section className="mt-10 max-w-3xl" aria-labelledby="calc-how-heading">
+        <h2 id="calc-how-heading" className="text-2xl font-bold text-neutral-900">
+          How the calculator works
+        </h2>
+        <p className="mt-2 text-[15px] leading-relaxed text-neutral-700">
+          Enter 4 numbers — loan balance, interest rate, tax bracket, and MAGI — and the calculator applies the $10,000 cap and the MAGI phase-out instantly.
+        </p>
+        <p className="mt-2 text-[15px] leading-relaxed text-neutral-700">
+          The result shows two figures: your deduction and your actual tax saving. The saving is what matters — a deduction only lowers taxable income, it is not a refund by itself.
+        </p>
+      </section>
+
       <section className="mt-10 max-w-3xl" aria-labelledby="calc-faq-heading">
         <h2 id="calc-faq-heading" className="text-2xl font-bold text-neutral-900">
           Calculator questions
@@ -99,7 +111,7 @@ export default function CalculatorPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          name: `${brand} Deduction Calculator`,
+          name: "Car loan interest deduction calculator",
           url: `${siteUrl}/calculator`,
           applicationCategory: "FinanceApplication",
           operatingSystem: "Web",

@@ -159,7 +159,7 @@ export default function Home() {
           <p className="mt-2 text-neutral-600">Three steps take about 60 seconds, and everything is free.</p>
           <ol className="mt-6 grid gap-4 sm:grid-cols-3">
             {[
-              ["1. Enter your VIN", "We decode it with the official NHTSA database — free, no signup."],
+              ["1. Enter your VIN", "VIN decoding with the official NHTSA database — free, no signup."],
               ["2. Check the 4 rules", "See exactly which rules your vehicle passes or fails, with the law cited."],
               ["3. Estimate your savings", "Run the calculator to see your deduction and real tax savings."],
             ].map(([t, d]) => (

@@ -80,6 +80,18 @@ export default async function VinCheckPage({
 
       <AdSlot slot="vin-check-bottom" label="In-article responsive ad" />
 
+      <section className="mt-10 max-w-3xl" aria-labelledby="vin-how-heading">
+        <h2 id="vin-how-heading" className="text-2xl font-bold text-neutral-900">
+          How the VIN check works
+        </h2>
+        <p className="mt-2 text-[15px] leading-relaxed text-neutral-700">
+          Enter your 17-character VIN and we decode it with the official NHTSA database, then check the result against all 4 rules in about 60 seconds.
+        </p>
+        <p className="mt-2 text-[15px] leading-relaxed text-neutral-700">
+          Nothing is stored and no name or email is collected — the check runs on the VIN alone.
+        </p>
+      </section>
+
       <section className="mt-10 max-w-3xl" aria-labelledby="vin-faq-heading">
         <h2 id="vin-faq-heading" className="text-2xl font-bold text-neutral-900">
           VIN checker questions
@@ -110,7 +122,7 @@ export default async function VinCheckPage({
         data={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          name: `${brand} VIN Eligibility Checker`,
+          name: "Does your car qualify? Check your VIN",
           url: `${siteUrl}/vin-check`,
           applicationCategory: "FinanceApplication",
           operatingSystem: "Web",

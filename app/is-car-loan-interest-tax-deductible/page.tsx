@@ -223,6 +223,7 @@ export default function GuidePage() {
 
       <section className="mt-10">
         <h2 className="text-2xl font-bold text-neutral-900">Sources</h2>
+        <p className="mt-2 text-sm text-neutral-700">2 primary sources below: the tax law (OBBBA §70203) and the VIN decoding data.</p>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-700">
           <li>
             One Big Beautiful Bill Act, §70203 (new-vehicle auto loan interest deduction) —{" "}

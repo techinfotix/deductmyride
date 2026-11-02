@@ -78,6 +78,7 @@ export default function ModelsPage() {
         {makes.map((make) => (
           <section key={make} aria-label={`${make} models`}>
             <h2 className="text-xl font-bold text-neutral-900">{make}</h2>
+            <p className="mt-1 text-sm text-neutral-600">{byMake.get(make)!.length} models for 2025 and 2026.</p>
             <ul className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {byMake.get(make)!.map((v) => {
                 const badge = verdictBadge[v.assembly];
